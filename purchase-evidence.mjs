@@ -49,7 +49,16 @@ export async function inspectPurchasePage(browser,product,{source='cloud-browser
   page=await browser.newPage();await page.setCacheEnabled(false);await page.setExtraHTTPHeaders({'Cache-Control':'no-cache, max-age=0','Pragma':'no-cache'});
   const response=await page.goto(product.url,{waitUntil:'domcontentloaded',timeout:10000}),observedAt=new Date().toISOString();
   if(response?.status()===200)await page.waitForFunction(()=>Array.from(document.querySelectorAll('button')).some(b=>b.textContent?.trim()==='加入購物車'),{timeout:3000}).catch(()=>{});
-  if(response?.status()===200)await page.evaluate(()=>Array.from(document.querySelectorAll('button')).find(b=>b.textContent?.trim()==='加入購物車')?.scrollIntoView({block:'center'}));
+  if(response?.status()===200)await page.evaluate(()=>{
+   const controls=Array.from(document.querySelectorAll('button')).filter(b=>{
+    if(b.textContent?.trim()!=='加入購物車')return false;
+    const rect=b.getBoundingClientRect();if(!rect.width||!rect.height)return false;
+    for(let node=b;node;node=node.parentElement){const style=getComputedStyle(node);if(style.display==='none'||style.visibility==='hidden'||style.opacity==='0'||style.pointerEvents==='none'||node.hidden)return false}
+    return true;
+   });
+   const enabled=controls.find(b=>!b.disabled&&!b.matches(':disabled')&&b.getAttribute('aria-disabled')!=='true'&&!b.closest('[inert],[aria-disabled="true"]'));
+   (enabled||controls[0])?.scrollIntoView({block:'center'});
+  });
   const evidence=await page.evaluate(purchaseDomEvidence,product.id);
   return purchaseProof(product,{...evidence,httpStatus:response?.status()||0,headers:response?.headers()||{},observedAt},{source,runId});
  }catch{return {purchasePolicyVersion,purchaseVerified:false,purchaseVerification:'error',purchaseCheckedAt:new Date().toISOString(),purchaseProductId:product.id}}
