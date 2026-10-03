@@ -43,12 +43,26 @@ export function purchaseDomEvidence(id){
  const buttons=Array.from(document.querySelectorAll('button')).filter(b=>b.textContent?.trim()==='加入購物車'&&visible(b));
  return {url:location.href,skuConfirmed:text.includes(id),enabled:buttons.some(b=>!b.disabled&&!b.matches(':disabled')&&b.getAttribute('aria-disabled')!=='true'&&!b.closest('[inert],[aria-disabled="true"]')),unavailable:/抱歉，所選商品缺貨|所選商品缺貨|此商品暫時缺貨/.test(text),blocked:/verify you are human|verifying the device|access denied|unusual traffic|captcha|Sorry, you have been blocked/i.test(text)||!!document.querySelector('iframe[id^="ddChallenge"],iframe[src*="captcha-delivery"]')};
 }
-export async function inspectPurchasePage(browser,product,{source='cloud-browser',runId=''}={}){
- let page;
+export async function inspectPurchasePage(browser,product,{source='cloud-browser',runId='',requestMode='browser-default',page:providedPage,closePage=true,timeoutMs=15000}={}){
+ let page=providedPage;
+ const started=Date.now(),remaining=()=>Math.max(1,timeoutMs-(Date.now()-started));
  try{
-  page=await browser.newPage();await page.setCacheEnabled(false);await page.setExtraHTTPHeaders({'Cache-Control':'no-cache, max-age=0','Pragma':'no-cache'});
-  const response=await page.goto(product.url,{waitUntil:'domcontentloaded',timeout:10000}),observedAt=new Date().toISOString();
-  if(response?.status()===200)await page.waitForFunction(()=>Array.from(document.querySelectorAll('button')).some(b=>b.textContent?.trim()==='加入購物車'),{timeout:3000}).catch(()=>{});
+  page||=await browser.newPage();
+  // Use ordinary browser request semantics. Response freshness is still
+  // independently required below; cached inventory never becomes proof.
+  if(requestMode==='no-cache'){await page.setCacheEnabled(false);await page.setExtraHTTPHeaders({'Cache-Control':'no-cache, max-age=0','Pragma':'no-cache'})}
+  else if(requestMode!=='browser-default')throw new Error('Unsupported purchase request mode');
+  const response=await page.goto(product.url,{waitUntil:'domcontentloaded',timeout:Math.min(10000,remaining())}),observedAt=new Date().toISOString();
+  if(response?.status()===200)await page.waitForFunction(id=>{
+   const text=document.body.innerText;
+   if(/所選商品缺貨|此商品暫時缺貨|verify you are human|access denied|captcha/i.test(text))return true;
+   return text.includes(id)&&Array.from(document.querySelectorAll('button')).some(b=>{
+    if(b.textContent?.trim()!=='加入購物車')return false;
+    const rect=b.getBoundingClientRect();if(!rect.width||!rect.height)return false;
+    for(let node=b;node;node=node.parentElement){const style=getComputedStyle(node);if(style.display==='none'||style.visibility==='hidden'||style.opacity==='0'||node.hidden)return false}
+    return true;
+   });
+  },{timeout:Math.min(5000,remaining())},product.id).catch(()=>{});
   if(response?.status()===200)await page.evaluate(()=>{
    const controls=Array.from(document.querySelectorAll('button')).filter(b=>{
     if(b.textContent?.trim()!=='加入購物車')return false;
@@ -60,7 +74,7 @@ export async function inspectPurchasePage(browser,product,{source='cloud-browser
    (enabled||controls[0])?.scrollIntoView({block:'center'});
   });
   const evidence=await page.evaluate(purchaseDomEvidence,product.id);
-  return purchaseProof(product,{...evidence,httpStatus:response?.status()||0,headers:response?.headers()||{},observedAt},{source,runId});
+  return {...purchaseProof(product,{...evidence,httpStatus:response?.status()||0,headers:response?.headers()||{},observedAt},{source,runId}),purchaseRequestMode:requestMode};
  }catch{return {purchasePolicyVersion,purchaseVerified:false,purchaseVerification:'error',purchaseCheckedAt:new Date().toISOString(),purchaseProductId:product.id}}
- finally{await page?.close().catch(()=>{})}
+ finally{if(closePage)await page?.close().catch(()=>{})}
 }

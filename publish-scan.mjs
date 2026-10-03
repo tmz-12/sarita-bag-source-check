@@ -6,7 +6,7 @@ import {resolve} from 'node:path';
 // old source code or force-push when a deployment/another result moved main.
 const result=await readFile('latest.json','utf8'),scan=JSON.parse(result);
 if(scan.schemaVersion!==3||scan.purchasePolicyVersion!==1||scan.repository!=='tmz-12/sarita-bag-source-check'||!Number.isFinite(Date.parse(scan.checkedAt)))throw new Error('Actual scan metadata is invalid');
-const sourcePaths=['source-check.mjs','purchase-evidence.mjs','freshness.mjs','discovery.mjs','core.mjs'];
+const sourcePaths=['source-check.mjs','purchase-evidence.mjs','purchase-navigation.mjs','freshness.mjs','discovery.mjs','core.mjs'];
 const index=resolve(process.env.RUNNER_TEMP||'.git','sarita-publish-'+(process.env.GITHUB_RUN_ID||process.pid)+'.index');
 const git=(args,options={})=>execFileSync('git',args,{encoding:'utf8',stdio:['pipe','pipe','pipe'],...options});
 async function note(message){console.log(message);if(process.env.GITHUB_STEP_SUMMARY)await appendFile(process.env.GITHUB_STEP_SUMMARY,'\n'+message+'\n')}
