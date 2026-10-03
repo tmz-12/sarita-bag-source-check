@@ -11,7 +11,7 @@ try{
   const page=await browser.newPage();
   try{
    let apiResponse;
-   page.on('response',r=>{if(r.url().startsWith('https://bck.hermes.com/products?')&&r.request().method()==='GET')apiResponse=r});
+   page.on('response',r=>{if(r.url().startsWith('https://bck.hermes.com/products?')&&new URL(r.url()).searchParams.get('locale')==='tw_zh'&&r.request().method()==='GET')apiResponse=r});
    const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:15000});
    let headers=response?.headers()||{},method='github-browser-html',parsed=inspectCatalog(await page.content());
    // Observe normal frontend requests only; no challenge solving or private cookies.
