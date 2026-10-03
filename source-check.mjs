@@ -39,7 +39,7 @@ try{
  const observations=Object.fromEntries(candidates.map(p=>[p.id,previous.purchaseObservations?.[p.id]||null]));
  const known=new Set((previous.candidates||[]).map(p=>p.id));
  const chosen=[...candidates].sort((a,b)=>(known.has(a.id)-known.has(b.id))||(Date.parse(observations[a.id]?.checkedAt||'')||0)-(Date.parse(observations[b.id]?.checkedAt||'')||0)).slice(0,24);
- const readerRequestPolicy=browserHeadless?'serial-browser-default-v1':'serial-browser-default-headed-v2';
+ const readerRequestPolicy=browserHeadless?'serial-browser-default-v1':'serial-browser-default-headed-v3';
  // First run of this policy probes the exact catalog-backed product shown by
  // the user. Later scans rotate oldest checks, with a bounded serial phase.
  const probe=previous.readerRequestPolicy!==readerRequestPolicy?chosen.find(p=>p.id==='H083939CP59'):null;

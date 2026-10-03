@@ -40,14 +40,24 @@ export function purchaseDomEvidence(id){
   if(x<0||y<0||x>=innerWidth||y>=innerHeight)return false;
   const hit=document.elementFromPoint(x,y);return hit===b||b.contains(hit);
  };
- const buttons=Array.from(document.querySelectorAll('button')).filter(b=>b.textContent?.trim()==='加入購物車'&&visible(b));
- return {url:location.href,skuConfirmed:text.includes(id),enabled:buttons.some(b=>!b.disabled&&!b.matches(':disabled')&&b.getAttribute('aria-disabled')!=='true'&&!b.closest('[inert],[aria-disabled="true"]')),unavailable:/抱歉，所選商品缺貨|所選商品缺貨|此商品暫時缺貨/.test(text),blocked:/verify you are human|verifying the device|access denied|unusual traffic|captcha|Sorry, you have been blocked/i.test(text)||!!document.querySelector('iframe[id^="ddChallenge"],iframe[src*="captcha-delivery"]')};
+ const controls=Array.from(document.querySelectorAll('button')).filter(b=>/加入.*購物車/.test(b.textContent||''));
+ const buttons=controls.filter(b=>b.textContent?.trim()==='加入購物車'&&visible(b));
+ const diagnostics={title:document.title,buttons:controls.slice(0,8).map(b=>{
+  const rect=b.getBoundingClientRect(),hit=document.elementFromPoint(rect.left+rect.width/2,rect.top+rect.height/2);
+  return {text:b.textContent?.trim().slice(0,80),visible:visible(b),disabled:b.disabled||b.matches(':disabled'),ariaDisabled:b.getAttribute('aria-disabled'),rect:{x:rect.x,y:rect.y,width:rect.width,height:rect.height},coveredBy:hit&&hit!==b&&!b.contains(hit)?{tag:hit.tagName,text:hit.textContent?.trim().slice(0,120)}:null};
+ }),consentOptions:Array.from(document.querySelectorAll('button')).map(b=>b.textContent?.trim()).filter(value=>/cookie|cookies|餅乾|同意|接受|拒絕|必要/i.test(value||'')).slice(0,12)};
+ return {url:location.href,diagnostics,skuConfirmed:text.includes(id),enabled:buttons.some(b=>!b.disabled&&!b.matches(':disabled')&&b.getAttribute('aria-disabled')!=='true'&&!b.closest('[inert],[aria-disabled="true"]')),unavailable:/抱歉，所選商品缺貨|所選商品缺貨|此商品暫時缺貨/.test(text),blocked:/verify you are human|verifying the device|access denied|unusual traffic|captcha|Sorry, you have been blocked/i.test(text)||!!document.querySelector('iframe[id^="ddChallenge"],iframe[src*="captcha-delivery"]')};
 }
 export async function inspectPurchasePage(browser,product,{source='cloud-browser',runId='',requestMode='browser-default',page:providedPage,closePage=true,timeoutMs=15000}={}){
- let page=providedPage;
+ let page=providedPage,responseListener;
+ const frontendResponses=[];
  const started=Date.now(),remaining=()=>Math.max(1,timeoutMs-(Date.now()-started));
  try{
   page||=await browser.newPage();
+  responseListener=response=>{
+   try{const url=new URL(response.url());if(url.origin==='https://bck.hermes.com'&&response.request().method()==='GET'&&frontendResponses.length<16)frontendResponses.push({path:url.pathname,status:response.status()})}catch{}
+  };
+  page.on?.('response',responseListener);
   // Use ordinary browser request semantics. Response freshness is still
   // independently required below; cached inventory never becomes proof.
   if(requestMode==='no-cache'){await page.setCacheEnabled(false);await page.setExtraHTTPHeaders({'Cache-Control':'no-cache, max-age=0','Pragma':'no-cache'})}
@@ -74,7 +84,7 @@ export async function inspectPurchasePage(browser,product,{source='cloud-browser
    (enabled||controls[0])?.scrollIntoView({block:'center'});
   });
   const evidence=await page.evaluate(purchaseDomEvidence,product.id);
-  return {...purchaseProof(product,{...evidence,httpStatus:response?.status()||0,headers:response?.headers()||{},observedAt},{source,runId}),purchaseRequestMode:requestMode};
+  return {...purchaseProof(product,{...evidence,httpStatus:response?.status()||0,headers:response?.headers()||{},observedAt},{source,runId}),purchaseRequestMode:requestMode,purchaseDiagnostics:{...evidence.diagnostics,frontendResponses}};
  }catch{return {purchasePolicyVersion,purchaseVerified:false,purchaseVerification:'error',purchaseCheckedAt:new Date().toISOString(),purchaseProductId:product.id}}
- finally{if(closePage)await page?.close().catch(()=>{})}
+ finally{if(responseListener)page?.off?.('response',responseListener);if(closePage)await page?.close().catch(()=>{})}
 }
