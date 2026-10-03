@@ -1,4 +1,5 @@
-export const watchFamilies = ['Neo Garden Voyage 41', 'Evelyne', 'Picotin'];
+export const watchScope = 'all-tw-bags';
+export const watchFamilies = ['台湾官网全部包款 · 所有系列、尺寸、颜色'];
 export const catalogUrls = [
  'https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/',
  'https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/'
@@ -7,9 +8,9 @@ const normalizedName=value=>String(value||'').normalize('NFKD').replace(/\p{M}/g
 const accessoryName=/strap|bandouliere|bag[\s-]*charm|key[\s-]*(?:ring|holder)|肩[帶带]|背[帶带]|吊[飾饰]|掛[飾饰]|挂饰|鑰匙圈|钥匙扣/;
 function familyFromName(value){
  const name=normalizedName(value).replace(/^(?:hermes|愛馬仕|爱马仕)[\s-]*/,'');
- if(/^neo[\s-]*garden[\s-]*voyage[\s-]*41(?=$|[\s-]|手|包)/.test(name))return watchFamilies[0];
- if(/^evelyne(?=$|[\s-]|肩|包|\d|iii)/.test(name))return watchFamilies[1];
- if(/^picotin(?=$|[\s-]|手|包|lock|\d)/.test(name))return watchFamilies[2];
+ if(/^neo[\s-]*garden[\s-]*voyage[\s-]*41(?=$|[\s-]|手|包)/.test(name))return 'Neo Garden Voyage 41';
+ if(/^evelyne(?=$|[\s-]|肩|包|\d|iii)/.test(name))return 'Evelyne';
+ if(/^picotin(?=$|[\s-]|手|包|lock|\d)/.test(name))return 'Picotin';
  return null;
 }
 export function candidateFromUrl(value,title='') {
@@ -30,6 +31,20 @@ export function candidateFromUrl(value,title='') {
   if(accessoryName.test(slug+' '+normalizedName(title)))return null;
   u.search='';u.hash='';
   return {id:match[2].toUpperCase(),name:match[1].replaceAll('-',' '),color:'所有颜色 · 以商品页面为准',family,matchedBy:urlFamily?'url':'title',url:u.href,image:'',observation:'尚未核验'};
+ }catch{return null}
+}
+// Use only for a record in the official bags-and-clutches catalog, never naked hrefs.
+export function catalogCandidateFromUrl(value,title='') {
+ try{
+  const u=new URL(value,'https://www.hermes.com');
+  if(u.protocol!=='https:'||u.hostname!=='www.hermes.com'||u.port||u.username||u.password)return null;
+  const match=decodeURIComponent(u.pathname).match(/^\/tw\/zh\/product\/([^/]+)-(H[A-Z0-9]{8,14})\/$/i);
+  if(!match||accessoryName.test(normalizedName(match[1]+' '+title)))return null;
+  const named=candidateFromUrl(value,title);
+  const urlFamily=familyFromName(match[1]),titleFamily=familyFromName(title);
+  if(urlFamily&&titleFamily&&urlFamily!==titleFamily)return null;
+  u.search='';u.hash='';
+  return {...named,id:match[2].toUpperCase(),name:title||match[1].replaceAll('-',' '),color:'所有颜色 · 以商品页面为准',family:named?.family||'其他包款',matchedBy:named?.matchedBy||'official-bag-catalog',catalogScope:watchScope,url:u.href,image:'',observation:'新发现分类链接 · 库存待确认'};
  }catch{return null}
 }
 export function discoverFromHtml(html) {
@@ -61,7 +76,7 @@ export function inspectCatalog(html) {
   const candidates=[];
   for(const item of items){
    if(typeof item.url!=='string'||!/^H[A-Z0-9]{8,14}$/.test(item.sku))throw new Error('商品编号或连结不完整');
-   const p=candidateFromUrl(item.url.startsWith('/product/')?'/tw/zh'+item.url:item.url,item.title);
+   const p=catalogCandidateFromUrl(item.url.startsWith('/product/')?'/tw/zh'+item.url:item.url,item.title);
    if(p){
     if(p.id!==item.sku)throw new Error('商品编号与连结不一致');
     candidates.push({...p,name:item.title||p.name,color:item.avgColor||p.color,stockSignal:typeof item.stock?.ecom==='boolean'?item.stock.ecom:null,displayOnly:item.stock?.displayOnly===true});
@@ -79,8 +94,8 @@ export async function discoverCatalogs(fetcher=fetch) {
    const html=await r.text();
    const validUrl=r.url?.startsWith(url);
    const data=validUrl?inspectCatalog(html):{ok:false,complete:false,candidates:[],error:'分类页跳转到了其他页面'};
-   return {url,status:r.status,bytes:html.length,...data};
+   return {url,status:r.status,bytes:html.length,...data,readable:data.ok,baselineCandidates:data.candidates};
   }catch{return {url,ok:false,candidates:[],error:'分类页读取失败或超时'}}
  }));
- return {checkedAt:new Date().toISOString(),ok:sources.every(s=>s.ok&&s.complete),sources,candidates:[...new Map(sources.flatMap(s=>s.candidates).map(p=>[p.id,p])).values()]};
+ return {scope:watchScope,checkedAt:new Date().toISOString(),ok:sources.every(s=>s.ok&&s.complete),sources,candidates:[...new Map(sources.flatMap(s=>s.candidates).map(p=>[p.id,p])).values()]};
 }
