@@ -3,20 +3,33 @@ export const catalogUrls = [
  'https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/',
  'https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/'
 ];
-export function candidateFromUrl(value) {
+const normalizedName=value=>String(value||'').normalize('NFKD').replace(/\p{M}/gu,'').replace(/[‐‑‒–—−_]/g,'-').trim().toLowerCase();
+const accessoryName=/strap|bandouliere|bag[\s-]*charm|key[\s-]*(?:ring|holder)|肩[帶带]|背[帶带]|吊[飾饰]|掛[飾饰]|挂饰|鑰匙圈|钥匙扣/;
+function familyFromName(value){
+ const name=normalizedName(value).replace(/^(?:hermes|愛馬仕|爱马仕)[\s-]*/,'');
+ if(/^neo[\s-]*garden[\s-]*voyage[\s-]*41(?=$|[\s-]|手|包)/.test(name))return watchFamilies[0];
+ if(/^evelyne(?=$|[\s-]|肩|包|\d|iii)/.test(name))return watchFamilies[1];
+ if(/^picotin(?=$|[\s-]|手|包|lock|\d)/.test(name))return watchFamilies[2];
+ return null;
+}
+export function candidateFromUrl(value,title='') {
  try {
   const u=new URL(value,'https://www.hermes.com');
   if(u.protocol!=='https:'||u.hostname!=='www.hermes.com'||u.port||u.username||u.password)return null;
   const path=decodeURIComponent(u.pathname);
   const match=path.match(/^\/tw\/zh\/product\/([^/]+)-(H[A-Z0-9]{8,14})\/$/i);
   if(!match)return null;
-  const slug=match[1].toLowerCase();
-  const family=/^neo-garden-voyage-41(?:-|手)/.test(slug)?watchFamilies[0]:/^evelyne(?:-|肩)/.test(slug)?watchFamilies[1]:/^picotin(?:-|手)/.test(slug)?watchFamilies[2]:null;
+  const slug=normalizedName(match[1]);
+  const urlFamily=familyFromName(slug),titleFamily=familyFromName(title);
+  if(urlFamily&&titleFamily&&urlFamily!==titleFamily)return null;
+  const neoSize=slug.match(/^neo[\s-]*garden[\s-]*voyage[\s-]*(\d+)/);
+  if(neoSize&&Number(neoSize[1])!==41)return null;
+  const family=urlFamily||titleFamily;
   if(!family)return null;
   // Exclude accessories whose names mention a bag family.
-  if(/strap|bandouliere|bag-charm|肩帶|背帶|吊飾/.test(slug))return null;
+  if(accessoryName.test(slug+' '+normalizedName(title)))return null;
   u.search='';u.hash='';
-  return {id:match[2].toUpperCase(),name:match[1].replaceAll('-',' '),color:'所有颜色 · 以商品页面为准',family,url:u.href,image:'',observation:'尚未核验'};
+  return {id:match[2].toUpperCase(),name:match[1].replaceAll('-',' '),color:'所有颜色 · 以商品页面为准',family,matchedBy:urlFamily?'url':'title',url:u.href,image:'',observation:'尚未核验'};
  }catch{return null}
 }
 export function discoverFromHtml(html) {
@@ -48,7 +61,7 @@ export function inspectCatalog(html) {
   const candidates=[];
   for(const item of items){
    if(typeof item.url!=='string'||!/^H[A-Z0-9]{8,14}$/.test(item.sku))throw new Error('商品编号或连结不完整');
-   const p=candidateFromUrl(item.url.startsWith('/product/')?'/tw/zh'+item.url:item.url);
+   const p=candidateFromUrl(item.url.startsWith('/product/')?'/tw/zh'+item.url:item.url,item.title);
    if(p){
     if(p.id!==item.sku)throw new Error('商品编号与连结不一致');
     candidates.push({...p,name:item.title||p.name,color:item.avgColor||p.color,stockSignal:typeof item.stock?.ecom==='boolean'?item.stock.ecom:null,displayOnly:item.stock?.displayOnly===true});
