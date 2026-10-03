@@ -5,7 +5,8 @@ import {cacheEvidence} from './freshness.mjs';
 import {purchasePolicyVersion} from './purchase-evidence.mjs';
 import {inspectSerialPurchases} from './purchase-navigation.mjs';
 const root='https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/';
-const browser=await puppeteer.launch({executablePath:process.env.CHROME_PATH||'/usr/bin/google-chrome',headless:true,args:['--no-sandbox']});
+const browserHeadless=process.env.CHROME_HEADLESS!=='false';
+const browser=await puppeteer.launch({executablePath:process.env.CHROME_PATH||'/usr/bin/google-chrome',headless:browserHeadless,args:['--no-sandbox']});
 const sources=[],checks=[];
 const previous=await readFile('latest.json','utf8').then(JSON.parse).catch(()=>({}));
 async function waitForFrontend(page,response){
@@ -38,7 +39,7 @@ try{
  const observations=Object.fromEntries(candidates.map(p=>[p.id,previous.purchaseObservations?.[p.id]||null]));
  const known=new Set((previous.candidates||[]).map(p=>p.id));
  const chosen=[...candidates].sort((a,b)=>(known.has(a.id)-known.has(b.id))||(Date.parse(observations[a.id]?.checkedAt||'')||0)-(Date.parse(observations[b.id]?.checkedAt||'')||0)).slice(0,24);
- const readerRequestPolicy='serial-browser-default-v1';
+ const readerRequestPolicy=browserHeadless?'serial-browser-default-v1':'serial-browser-default-headed-v2';
  // First run of this policy probes the exact catalog-backed product shown by
  // the user. Later scans rotate oldest checks, with a bounded serial phase.
  const probe=previous.readerRequestPolicy!==readerRequestPolicy?chosen.find(p=>p.id==='H083939CP59'):null;
@@ -46,7 +47,7 @@ try{
  for(const p of candidates)if(navigation.results.has(p.id))Object.assign(p,navigation.results.get(p.id));
  checks.push(...navigation.checkedRows);Object.assign(observations,navigation.observations);
  const ok=sources.some(s=>s.url===root&&s.ok&&s.complete)||catalogUrls.every(url=>sources.some(s=>s.url===url&&s.ok&&s.complete));
- const output={schemaVersion:3,purchasePolicyVersion,readerRequestPolicy,purchaseNavigation:{mode:'browser-default',serial:true,budgetMs:45000,stopReason:navigation.stopReason,probeId:probe?.id||null},scope:watchScope,repository:'tmz-12/sarita-bag-source-check',runId:process.env.GITHUB_RUN_ID||null,checkedAt:new Date().toISOString(),method:'github-browser',ok,sources,candidates,checks,purchaseObservations:observations,notificationSent:false};
+ const output={schemaVersion:3,purchasePolicyVersion,readerRequestPolicy,purchaseNavigation:{mode:'browser-default',headless:browserHeadless,serial:true,budgetMs:45000,stopReason:navigation.stopReason,probeId:probe?.id||null},scope:watchScope,repository:'tmz-12/sarita-bag-source-check',runId:process.env.GITHUB_RUN_ID||null,checkedAt:new Date().toISOString(),method:'github-browser',ok,sources,candidates,checks,purchaseObservations:observations,notificationSent:false};
  // Publish only cache evidence; session cookies and authentication headers stay private.
  for(const s of sources)s.headers=Object.fromEntries(Object.entries(s.headers||{}).filter(([k])=>['age','date','cf-cache-status','cache-control'].includes(k)));
  for(const p of candidates)if(p.purchaseHeaders)p.purchaseHeaders=Object.fromEntries(Object.entries(p.purchaseHeaders).filter(([k])=>['age','date','cf-cache-status','cache-control'].includes(k)));
