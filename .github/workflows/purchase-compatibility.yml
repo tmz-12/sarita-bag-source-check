@@ -26,7 +26,7 @@ jobs:
           if (Test-Path -LiteralPath 'latest.json') {
             Remove-Item -LiteralPath 'latest.json'
           }
-          node source-check.mjs
+          node purchase-compatibility.mjs
       - name: Record actual purchase evidence without sending notifications
         if: always()
         shell: pwsh
