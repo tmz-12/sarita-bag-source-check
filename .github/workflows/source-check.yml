@@ -24,6 +24,8 @@ jobs:
       - name: Install official browser library
         run: npm install --no-save --ignore-scripts puppeteer-core@25.12.0
       - name: Inspect actual public source responses
-        run: node source-check.mjs
+        env:
+          CHROME_HEADLESS: 'false'
+        run: xvfb-run --auto-servernum node source-check.mjs
       - name: Publish actual scan for remote dispatch
         run: node publish-scan.mjs
