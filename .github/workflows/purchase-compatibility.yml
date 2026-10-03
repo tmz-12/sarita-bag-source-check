@@ -1,0 +1,51 @@
+name: Purchase browser compatibility check
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    # One diagnostic on a standard free public-repository runner.
+    runs-on: windows-2025
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install official browser library
+        run: npm install --no-save --ignore-scripts puppeteer-core@25.12.0
+      - name: Inspect the same catalog-backed product with ordinary Edge
+        env:
+          CHROME_HEADLESS: 'false'
+          CHROME_PATH: 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
+        shell: pwsh
+        run: |
+          # Clear only this temporary diagnostic checkout's public result so
+          # the reader probes the user-reported Fonsbelle SKU. No publication.
+          if (Test-Path -LiteralPath 'latest.json') {
+            Remove-Item -LiteralPath 'latest.json'
+          }
+          node source-check.mjs
+      - name: Record actual purchase evidence without sending notifications
+        if: always()
+        shell: pwsh
+        run: |
+          if (-not (Test-Path -LiteralPath 'latest.json')) {
+            'Reader did not produce evidence.' | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append
+            exit 0
+          }
+          $taskScan = Get-Content -Raw -LiteralPath 'latest.json' | ConvertFrom-Json
+          $taskReport = [ordered]@{
+            runId = $taskScan.runId
+            checkedAt = $taskScan.checkedAt
+            purchaseNavigation = $taskScan.purchaseNavigation
+            sources = @($taskScan.sources | Select-Object status, apiStatus, method, cacheAgeSeconds)
+            checks = $taskScan.checks
+            product = @($taskScan.candidates | Where-Object { $_.id -eq 'H083939CP59' })
+          }
+          '# Actual Windows Edge purchase evidence' | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append
+          'No notification, purchase, or cart operation was performed.' | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append
+          '```json' | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append
+          $taskReport | ConvertTo-Json -Depth 14 | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append
+          '```' | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append
