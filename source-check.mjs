@@ -6,7 +6,19 @@ import {purchasePolicyVersion} from './purchase-evidence.mjs';
 import {inspectSerialPurchases} from './purchase-navigation.mjs';
 const root='https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/';
 const browserHeadless=process.env.CHROME_HEADLESS!=='false';
-const browser=await puppeteer.launch({executablePath:process.env.CHROME_PATH||'/usr/bin/google-chrome',headless:browserHeadless,args:['--no-sandbox']});
+// Hosted runners can start Chrome slowly. Retry only the observed launch timeout;
+// never rerun product checks or publish an old scan after a failed launch.
+async function launchBrowser(launcher,options,{sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms)),warn=console.warn}={}){
+ for(let attempt=1;attempt<=2;attempt++){
+  try{return await launcher.launch({...options,timeout:60000})}
+  catch(error){
+   if(attempt===2||error?.name!=='TimeoutError'||!error.message.includes('WS endpoint'))throw error;
+   warn('Chrome startup timed out; retrying once before scanning.');
+   await sleep(2000);
+  }
+ }
+}
+const browser=await launchBrowser(puppeteer,{executablePath:process.env.CHROME_PATH||'/usr/bin/google-chrome',headless:browserHeadless,args:['--no-sandbox']});
 const sources=[],checks=[];
 const previous=await readFile('latest.json','utf8').then(JSON.parse).catch(()=>({}));
 async function waitForFrontend(page,response){
