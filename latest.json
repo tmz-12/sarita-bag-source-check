@@ -7,30 +7,31 @@
     "headless": false,
     "serial": true,
     "budgetMs": 45000,
-    "stopReason": "blocked",
+    "stopReason": "http-403",
     "probeId": null
   },
   "scope": "all-tw-bags",
   "repository": "tmz-12/sarita-bag-source-check",
-  "runId": "39542864236",
-  "checkedAt": "2026-10-21T04:14:11.485Z",
+  "runId": "39543325347",
+  "checkedAt": "2026-10-21T04:19:13.251Z",
   "method": "github-browser",
-  "ok": false,
+  "ok": true,
   "sources": [
     {
       "url": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "observedAt": "2026-10-21T04:13:59.907Z",
+      "observedAt": "2026-10-21T04:19:01.222Z",
       "status": 200,
       "headers": {
+        "age": "531",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Wed, 21 Oct 2026 04:13:56 GMT"
+        "date": "Wed, 21 Oct 2026 04:18:59 GMT"
       },
       "method": "github-browser-html",
       "renderWaitCompleted": true,
       "apiStatus": null,
       "apiError": null,
-      "ok": false,
+      "ok": true,
       "complete": true,
       "candidates": [
         {
@@ -46,9 +47,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H088228CK18",
@@ -63,9 +64,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H087970CT18",
@@ -80,9 +84,12 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H082119CK18",
@@ -97,9 +104,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H085945CCBX",
@@ -114,9 +124,51 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchasePolicyVersion": 1,
+          "purchaseProductId": "H085945CCBX",
+          "purchaseUrl": "https://www.hermes.com/tw/zh/product/evelyne-16-amazone%E8%82%A9%E8%83%8C%E5%8C%85-H085945CCBX/",
+          "purchaseObservedAt": "2026-10-21T04:19:10.777Z",
+          "purchaseCheckedAt": "2026-10-21T04:19:11.110Z",
+          "purchaseHttpStatus": 200,
+          "purchaseHeaders": {
+            "age": "1490",
+            "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
+            "cf-cache-status": "HIT",
+            "date": "Wed, 21 Oct 2026 04:19:10 GMT"
+          },
+          "purchaseEvidence": {
+            "skuConfirmed": true,
+            "enabled": false,
+            "unavailable": true,
+            "blocked": false
+          },
+          "purchaseProofId": "github-browser:39543325347:H085945CCBX:2026-10-21T04:19:11.110Z",
+          "purchaseVerification": "cached-or-unknown",
+          "purchaseVerified": false,
+          "purchaseRequestMode": "browser-default",
+          "purchaseDiagnostics": {
+            "title": "Evelyne 16 Amazone肩背包 - 米色 | Hermès 愛馬仕台灣地區官網",
+            "buttons": [
+              {
+                "text": "加入購物車",
+                "visible": false,
+                "disabled": true,
+                "ariaDisabled": "true",
+                "rect": {
+                  "x": 16,
+                  "y": 536,
+                  "width": 753,
+                  "height": 48
+                },
+                "coveredBy": null
+              }
+            ],
+            "consentOptions": [],
+            "frontendResponses": []
+          }
         },
         {
           "id": "H086729CK18",
@@ -131,9 +183,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H069426CKCR",
@@ -148,9 +200,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H056277CK18",
@@ -165,9 +217,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H087953CKAB",
@@ -182,9 +234,12 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H087913CC89",
@@ -199,9 +254,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H087953CCAL",
@@ -216,9 +271,12 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H069523CCAI",
@@ -233,9 +291,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H086959CK34",
@@ -250,9 +308,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H086422CK37",
@@ -267,9 +328,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H086915CK37",
@@ -284,9 +345,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H086248CK37",
@@ -301,9 +365,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H082119CK37",
@@ -318,9 +385,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H085414CKAO",
@@ -335,9 +405,55 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchasePolicyVersion": 1,
+          "purchaseProductId": "H085414CKAO",
+          "purchaseUrl": "https://www.hermes.com/tw/zh/product/herbag-zip-20%E6%89%8B%E6%8F%90%E5%8C%85-H085414CKAO/",
+          "purchaseObservedAt": "2026-10-21T04:19:11.759Z",
+          "purchaseCheckedAt": "2026-10-21T04:19:11.943Z",
+          "purchaseHttpStatus": 200,
+          "purchaseHeaders": {
+            "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
+            "cf-cache-status": "HIT",
+            "date": "Wed, 21 Oct 2026 04:19:11 GMT"
+          },
+          "purchaseEvidence": {
+            "skuConfirmed": true,
+            "enabled": false,
+            "unavailable": true,
+            "blocked": false
+          },
+          "purchaseProofId": "github-browser:39543325347:H085414CKAO:2026-10-21T04:19:11.943Z",
+          "purchaseVerification": "cached-or-unknown",
+          "purchaseVerified": false,
+          "purchaseRequestMode": "browser-default",
+          "purchaseDiagnostics": {
+            "title": "Herbag Zip 20手提包 | Hermès 愛馬仕台灣地區官網",
+            "buttons": [
+              {
+                "text": "加入購物車",
+                "visible": false,
+                "disabled": true,
+                "ariaDisabled": "true",
+                "rect": {
+                  "x": 16,
+                  "y": 536,
+                  "width": 753,
+                  "height": 48
+                },
+                "coveredBy": null
+              }
+            ],
+            "consentOptions": [],
+            "frontendResponses": [
+              {
+                "path": "/customer-session",
+                "status": 403
+              }
+            ]
+          }
         },
         {
           "id": "H086394CKAA",
@@ -352,9 +468,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H086430CKAG",
@@ -369,9 +485,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H088228CK2D",
@@ -386,9 +502,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H086958CK2D",
@@ -403,9 +522,41 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchasePolicyVersion": 1,
+          "purchaseProductId": "H086958CK2D",
+          "purchaseUrl": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086958CK2D/",
+          "purchaseObservedAt": "2026-10-21T04:19:13.219Z",
+          "purchaseCheckedAt": "2026-10-21T04:19:13.232Z",
+          "purchaseHttpStatus": 403,
+          "purchaseHeaders": {
+            "cache-control": "max-age=0, private, no-cache, no-store, must-revalidate",
+            "cf-cache-status": "BYPASS",
+            "date": "Wed, 21 Oct 2026 04:19:12 GMT"
+          },
+          "purchaseEvidence": {
+            "skuConfirmed": false,
+            "enabled": false,
+            "unavailable": false,
+            "blocked": true
+          },
+          "purchaseProofId": "github-browser:39543325347:H086958CK2D:2026-10-21T04:19:13.232Z",
+          "purchaseVerification": "error",
+          "purchaseVerified": false,
+          "purchaseRequestMode": "browser-default",
+          "purchaseDiagnostics": {
+            "title": "hermes.com",
+            "buttons": [],
+            "consentOptions": [],
+            "frontendResponses": [
+              {
+                "path": "/customer-session",
+                "status": 403
+              }
+            ]
+          }
         },
         {
           "id": "H083589CK2D",
@@ -420,9 +571,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H086729CK2D",
@@ -437,9 +591,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H082119CK2D",
@@ -454,9 +608,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H086430CCAJ",
@@ -471,9 +628,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H085414CKAJ",
@@ -488,9 +645,12 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H086583CCAJ",
@@ -505,9 +665,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H086958CK47",
@@ -522,9 +682,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H086915CKP0",
@@ -539,9 +702,12 @@
           "stockSignal": true,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H069573CKDN",
@@ -556,9 +722,55 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchasePolicyVersion": 1,
+          "purchaseProductId": "H069573CKDN",
+          "purchaseUrl": "https://www.hermes.com/tw/zh/product/garden-party-30%E6%89%8B%E6%8F%90%E5%8C%85-H069573CKDN/",
+          "purchaseObservedAt": "2026-10-21T04:19:12.523Z",
+          "purchaseCheckedAt": "2026-10-21T04:19:12.705Z",
+          "purchaseHttpStatus": 200,
+          "purchaseHeaders": {
+            "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
+            "cf-cache-status": "HIT",
+            "date": "Wed, 21 Oct 2026 04:19:12 GMT"
+          },
+          "purchaseEvidence": {
+            "skuConfirmed": true,
+            "enabled": false,
+            "unavailable": true,
+            "blocked": false
+          },
+          "purchaseProofId": "github-browser:39543325347:H069573CKDN:2026-10-21T04:19:12.705Z",
+          "purchaseVerification": "cached-or-unknown",
+          "purchaseVerified": false,
+          "purchaseRequestMode": "browser-default",
+          "purchaseDiagnostics": {
+            "title": "Garden Party 30手提包 | Hermès 愛馬仕台灣地區官網",
+            "buttons": [
+              {
+                "text": "加入購物車",
+                "visible": false,
+                "disabled": true,
+                "ariaDisabled": "true",
+                "rect": {
+                  "x": 16,
+                  "y": 536,
+                  "width": 753,
+                  "height": 48
+                },
+                "coveredBy": null
+              }
+            ],
+            "consentOptions": [],
+            "frontendResponses": [
+              {
+                "path": "/customer-session",
+                "status": 403
+              }
+            ]
+          }
         },
         {
           "id": "H085414CKAE",
@@ -573,9 +785,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H086418CKAP",
@@ -590,9 +802,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H085942CKAD",
@@ -607,9 +819,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H088612CKAW",
@@ -624,9 +836,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H086430CKAH",
@@ -641,9 +853,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H087943CCAI",
@@ -658,9 +870,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H087941CK89",
@@ -675,9 +887,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H084948CP89",
@@ -692,9 +904,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H086430CKAA",
@@ -709,9 +924,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true
         },
         {
           "id": "H086955CC89",
@@ -726,9 +941,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H083939CP59",
@@ -743,9 +961,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H086915CK89",
@@ -760,9 +981,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H087960CT89",
@@ -777,14 +1001,17 @@
           "stockSignal": true,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": null,
-          "sourceCacheAgeSeconds": null,
-          "sourceFresh": false
+          "sourceDataAt": "2026-10-21T04:10:13.843Z",
+          "sourceCacheAgeSeconds": 531,
+          "sourceFresh": true,
+          "purchaseVerified": false,
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         }
       ],
       "productCount": 44,
       "total": 44,
-      "error": "分类资料有缓存或年龄无法确认，另须购买页面核验",
+      "error": null,
       "baselineCandidates": [
         {
           "id": "H087914CK18",
@@ -1404,19 +1631,19 @@
         }
       ],
       "readable": true,
-      "cacheAgeSeconds": null,
+      "cacheAgeSeconds": 531,
       "cacheStatus": "HIT",
-      "sourceDate": "Wed, 21 Oct 2026 04:13:56 GMT"
+      "sourceDate": "Wed, 21 Oct 2026 04:18:59 GMT"
     },
     {
       "url": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "observedAt": "2026-10-21T04:14:04.524Z",
+      "observedAt": "2026-10-21T04:19:05.380Z",
       "status": 200,
       "headers": {
-        "age": "2603",
+        "age": "2904",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Wed, 21 Oct 2026 04:14:04 GMT"
+        "date": "Wed, 21 Oct 2026 04:19:04 GMT"
       },
       "method": "github-browser-html",
       "renderWaitCompleted": true,
@@ -1438,12 +1665,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H087913CC89",
@@ -1458,50 +1682,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchasePolicyVersion": 1,
-          "purchaseProductId": "H087913CC89",
-          "purchaseUrl": "https://www.hermes.com/tw/zh/product/besace-attelee%E8%82%A9%E8%83%8C%E5%8C%85-H087913CC89/",
-          "purchaseObservedAt": "2026-10-21T04:14:09.739Z",
-          "purchaseCheckedAt": "2026-10-21T04:14:10.052Z",
-          "purchaseHttpStatus": 200,
-          "purchaseHeaders": {
-            "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
-            "cf-cache-status": "HIT",
-            "date": "Wed, 21 Oct 2026 04:14:09 GMT"
-          },
-          "purchaseEvidence": {
-            "skuConfirmed": true,
-            "enabled": false,
-            "unavailable": true,
-            "blocked": false
-          },
-          "purchaseProofId": "github-browser:39542864236:H087913CC89:2026-10-21T04:14:10.052Z",
-          "purchaseVerification": "cached-or-unknown",
-          "purchaseVerified": false,
-          "purchaseRequestMode": "browser-default",
-          "purchaseDiagnostics": {
-            "title": "Besace Attelee肩背包 - 黃色 | Hermès 愛馬仕台灣地區官網",
-            "buttons": [
-              {
-                "text": "加入購物車",
-                "visible": false,
-                "disabled": true,
-                "ariaDisabled": "true",
-                "rect": {
-                  "x": 16,
-                  "y": 536,
-                  "width": 753,
-                  "height": 48
-                },
-                "coveredBy": null
-              }
-            ],
-            "consentOptions": [],
-            "frontendResponses": []
-          }
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H087953CCAL",
@@ -1516,12 +1699,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H069523CCAI",
@@ -1536,8 +1716,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1553,8 +1733,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1570,12 +1750,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H085414CKAO",
@@ -1590,12 +1767,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H086394CKAA",
@@ -1610,8 +1784,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1627,8 +1801,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1644,8 +1818,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1661,8 +1835,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1678,12 +1852,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H086729CK18",
@@ -1698,8 +1869,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1715,8 +1886,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1732,12 +1903,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H069426CKCR",
@@ -1752,8 +1920,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1769,12 +1937,9 @@
           "stockSignal": true,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H086430CCAJ",
@@ -1789,8 +1954,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1806,8 +1971,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1823,62 +1988,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchasePolicyVersion": 1,
-          "purchaseProductId": "H086583CCAJ",
-          "purchaseUrl": "https://www.hermes.com/tw/zh/product/tablier-sellier%E8%82%A9%E8%83%8C%E5%8C%85-H086583CCAJ/",
-          "purchaseObservedAt": "2026-10-21T04:14:10.908Z",
-          "purchaseCheckedAt": "2026-10-21T04:14:11.138Z",
-          "purchaseHttpStatus": 200,
-          "purchaseHeaders": {
-            "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
-            "cf-cache-status": "HIT",
-            "date": "Wed, 21 Oct 2026 04:14:10 GMT"
-          },
-          "purchaseEvidence": {
-            "skuConfirmed": true,
-            "enabled": false,
-            "unavailable": true,
-            "blocked": true
-          },
-          "purchaseProofId": "github-browser:39542864236:H086583CCAJ:2026-10-21T04:14:11.138Z",
-          "purchaseVerification": "error",
-          "purchaseVerified": false,
-          "purchaseRequestMode": "browser-default",
-          "purchaseDiagnostics": {
-            "title": "Tablier Sellier肩背包 | Hermès 愛馬仕台灣地區官網",
-            "buttons": [
-              {
-                "text": "加入購物車",
-                "visible": false,
-                "disabled": true,
-                "ariaDisabled": "true",
-                "rect": {
-                  "x": 16,
-                  "y": 536,
-                  "width": 768,
-                  "height": 48
-                },
-                "coveredBy": {
-                  "tag": "IFRAME",
-                  "text": ""
-                }
-              }
-            ],
-            "consentOptions": [],
-            "frontendResponses": [
-              {
-                "path": "/customer-session",
-                "status": 403
-              },
-              {
-                "path": "/customer-session",
-                "status": 403
-              }
-            ]
-          }
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H069573CKDN",
@@ -1893,12 +2005,9 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H086418CKAP",
@@ -1913,8 +2022,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1930,8 +2039,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1947,8 +2056,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1964,8 +2073,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1981,8 +2090,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -1998,8 +2107,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -2015,8 +2124,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -2032,8 +2141,8 @@
           "stockSignal": false,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
           "sourceFresh": false
         },
         {
@@ -2049,12 +2158,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H087960CT89",
@@ -2069,12 +2175,9 @@
           "stockSignal": true,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H086955CC89",
@@ -2089,12 +2192,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H086915CK89",
@@ -2109,12 +2209,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         },
         {
           "id": "H083939CP59",
@@ -2129,12 +2226,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:30:43.835Z",
-          "sourceCacheAgeSeconds": 2603,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:30:43.808Z",
+          "sourceCacheAgeSeconds": 2904,
+          "sourceFresh": false
         }
       ],
       "productCount": 34,
@@ -2619,19 +2713,19 @@
         }
       ],
       "readable": true,
-      "cacheAgeSeconds": 2603,
+      "cacheAgeSeconds": 2904,
       "cacheStatus": "HIT",
-      "sourceDate": "Wed, 21 Oct 2026 04:14:04 GMT"
+      "sourceDate": "Wed, 21 Oct 2026 04:19:04 GMT"
     },
     {
       "url": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "observedAt": "2026-10-21T04:14:07.408Z",
+      "observedAt": "2026-10-21T04:19:08.343Z",
       "status": 200,
       "headers": {
-        "age": "3085",
+        "age": "3386",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Wed, 21 Oct 2026 04:14:06 GMT"
+        "date": "Wed, 21 Oct 2026 04:19:07 GMT"
       },
       "method": "github-browser-html",
       "renderWaitCompleted": true,
@@ -2653,12 +2747,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:22:44.072Z",
-          "sourceCacheAgeSeconds": 3085,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:22:44.232Z",
+          "sourceCacheAgeSeconds": 3386,
+          "sourceFresh": false
         },
         {
           "id": "H082119CK18",
@@ -2673,12 +2764,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:22:44.072Z",
-          "sourceCacheAgeSeconds": 3085,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:22:44.232Z",
+          "sourceCacheAgeSeconds": 3386,
+          "sourceFresh": false
         },
         {
           "id": "H086958CK47",
@@ -2693,12 +2781,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:22:44.072Z",
-          "sourceCacheAgeSeconds": 3085,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:22:44.232Z",
+          "sourceCacheAgeSeconds": 3386,
+          "sourceFresh": false
         },
         {
           "id": "H088228CK2D",
@@ -2713,8 +2798,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:22:44.072Z",
-          "sourceCacheAgeSeconds": 3085,
+          "sourceDataAt": "2026-10-21T03:22:44.232Z",
+          "sourceCacheAgeSeconds": 3386,
           "sourceFresh": false
         },
         {
@@ -2730,12 +2815,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:22:44.072Z",
-          "sourceCacheAgeSeconds": 3085,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:22:44.232Z",
+          "sourceCacheAgeSeconds": 3386,
+          "sourceFresh": false
         },
         {
           "id": "H086958CK2D",
@@ -2750,12 +2832,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:22:44.072Z",
-          "sourceCacheAgeSeconds": 3085,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:22:44.232Z",
+          "sourceCacheAgeSeconds": 3386,
+          "sourceFresh": false
         },
         {
           "id": "H082119CK2D",
@@ -2770,12 +2849,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:22:44.072Z",
-          "sourceCacheAgeSeconds": 3085,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:22:44.232Z",
+          "sourceCacheAgeSeconds": 3386,
+          "sourceFresh": false
         },
         {
           "id": "H086248CK37",
@@ -2790,12 +2866,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:22:44.072Z",
-          "sourceCacheAgeSeconds": 3085,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:22:44.232Z",
+          "sourceCacheAgeSeconds": 3386,
+          "sourceFresh": false
         },
         {
           "id": "H086959CK34",
@@ -2810,12 +2883,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:22:44.072Z",
-          "sourceCacheAgeSeconds": 3085,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:22:44.232Z",
+          "sourceCacheAgeSeconds": 3386,
+          "sourceFresh": false
         },
         {
           "id": "H082119CK37",
@@ -2830,12 +2900,9 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-21T03:22:44.072Z",
-          "sourceCacheAgeSeconds": 3085,
-          "sourceFresh": false,
-          "purchaseVerified": false,
-          "purchaseVerification": "not-checked",
-          "purchaseCheckSkipReason": "blocked"
+          "sourceDataAt": "2026-10-21T03:22:44.232Z",
+          "sourceCacheAgeSeconds": 3386,
+          "sourceFresh": false
         }
       ],
       "productCount": 10,
@@ -2984,9 +3051,9 @@
         }
       ],
       "readable": true,
-      "cacheAgeSeconds": 3085,
+      "cacheAgeSeconds": 3386,
       "cacheStatus": "HIT",
-      "sourceDate": "Wed, 21 Oct 2026 04:14:06 GMT"
+      "sourceDate": "Wed, 21 Oct 2026 04:19:07 GMT"
     }
   ],
   "candidates": [
@@ -3002,10 +3069,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H088228CK18",
@@ -3019,13 +3086,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:22:44.072Z",
-      "sourceCacheAgeSeconds": 3085,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H087970CT18",
@@ -3039,13 +3106,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H082119CK18",
@@ -3059,13 +3126,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:22:44.072Z",
-      "sourceCacheAgeSeconds": 3085,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H085945CCBX",
@@ -3079,111 +3146,21 @@
       "catalogScope": "all-tw-bags",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
-      "purchaseVerified": false,
-      "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
-    },
-    {
-      "id": "H086729CK18",
-      "name": "Neo Garden 23手提包",
-      "color": "米色/原色",
-      "family": "其他包款",
-      "matchedBy": "official-bag-catalog",
-      "catalogScope": "all-tw-bags",
-      "url": "https://www.hermes.com/tw/zh/product/neo-garden-23%E6%89%8B%E6%8F%90%E5%8C%85-H086729CK18/",
-      "image": "",
-      "observation": "新发现分类链接 · 库存待确认",
-      "stockSignal": false,
-      "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
-    },
-    {
-      "id": "H069426CKCR",
-      "name": "Evelyne 16 Amazone肩背包",
-      "color": "灰色",
-      "family": "Evelyne",
-      "matchedBy": "url",
-      "url": "https://www.hermes.com/tw/zh/product/evelyne-16-amazone%E8%82%A9%E8%83%8C%E5%8C%85-H069426CKCR/",
-      "image": "",
-      "observation": "新发现分类链接 · 库存待确认",
-      "catalogScope": "all-tw-bags",
-      "stockSignal": false,
-      "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
-    },
-    {
-      "id": "H056277CK18",
-      "name": "Evelyne III 29肩背包",
-      "color": "米色/原色",
-      "family": "Evelyne",
-      "matchedBy": "url",
-      "url": "https://www.hermes.com/tw/zh/product/evelyne-iii-29%E8%82%A9%E8%83%8C%E5%8C%85-H056277CK18/",
-      "image": "",
-      "observation": "新发现分类链接 · 库存待确认",
-      "catalogScope": "all-tw-bags",
-      "stockSignal": false,
-      "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
-    },
-    {
-      "id": "H087953CKAB",
-      "name": "Double Longe肩背包",
-      "color": "黑色",
-      "family": "其他包款",
-      "matchedBy": "official-bag-catalog",
-      "catalogScope": "all-tw-bags",
-      "url": "https://www.hermes.com/tw/zh/product/double-longe%E8%82%A9%E8%83%8C%E5%8C%85-H087953CKAB/",
-      "image": "",
-      "observation": "新发现分类链接 · 库存待确认",
-      "stockSignal": false,
-      "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
-      "purchaseVerified": false,
-      "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
-    },
-    {
-      "id": "H087913CC89",
-      "name": "Besace Attelee肩背包",
-      "color": "黑色",
-      "family": "其他包款",
-      "matchedBy": "official-bag-catalog",
-      "catalogScope": "all-tw-bags",
-      "url": "https://www.hermes.com/tw/zh/product/besace-attelee%E8%82%A9%E8%83%8C%E5%8C%85-H087913CC89/",
-      "image": "",
-      "observation": "新发现分类链接 · 库存待确认",
-      "stockSignal": false,
-      "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchasePolicyVersion": 1,
-      "purchaseProductId": "H087913CC89",
-      "purchaseUrl": "https://www.hermes.com/tw/zh/product/besace-attelee%E8%82%A9%E8%83%8C%E5%8C%85-H087913CC89/",
-      "purchaseObservedAt": "2026-10-21T04:14:09.739Z",
-      "purchaseCheckedAt": "2026-10-21T04:14:10.052Z",
+      "purchaseProductId": "H085945CCBX",
+      "purchaseUrl": "https://www.hermes.com/tw/zh/product/evelyne-16-amazone%E8%82%A9%E8%83%8C%E5%8C%85-H085945CCBX/",
+      "purchaseObservedAt": "2026-10-21T04:19:10.777Z",
+      "purchaseCheckedAt": "2026-10-21T04:19:11.110Z",
       "purchaseHttpStatus": 200,
       "purchaseHeaders": {
+        "age": "1490",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Wed, 21 Oct 2026 04:14:09 GMT"
+        "date": "Wed, 21 Oct 2026 04:19:10 GMT"
       },
       "purchaseEvidence": {
         "skuConfirmed": true,
@@ -3191,12 +3168,12 @@
         "unavailable": true,
         "blocked": false
       },
-      "purchaseProofId": "github-browser:39542864236:H087913CC89:2026-10-21T04:14:10.052Z",
+      "purchaseProofId": "github-browser:39543325347:H085945CCBX:2026-10-21T04:19:11.110Z",
       "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
       "purchaseDiagnostics": {
-        "title": "Besace Attelee肩背包 - 黃色 | Hermès 愛馬仕台灣地區官網",
+        "title": "Evelyne 16 Amazone肩背包 - 米色 | Hermès 愛馬仕台灣地區官網",
         "buttons": [
           {
             "text": "加入購物車",
@@ -3217,6 +3194,94 @@
       }
     },
     {
+      "id": "H086729CK18",
+      "name": "Neo Garden 23手提包",
+      "color": "米色/原色",
+      "family": "其他包款",
+      "matchedBy": "official-bag-catalog",
+      "catalogScope": "all-tw-bags",
+      "url": "https://www.hermes.com/tw/zh/product/neo-garden-23%E6%89%8B%E6%8F%90%E5%8C%85-H086729CK18/",
+      "image": "",
+      "observation": "新发现分类链接 · 库存待确认",
+      "stockSignal": false,
+      "displayOnly": true,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
+    },
+    {
+      "id": "H069426CKCR",
+      "name": "Evelyne 16 Amazone肩背包",
+      "color": "灰色",
+      "family": "Evelyne",
+      "matchedBy": "url",
+      "url": "https://www.hermes.com/tw/zh/product/evelyne-16-amazone%E8%82%A9%E8%83%8C%E5%8C%85-H069426CKCR/",
+      "image": "",
+      "observation": "新发现分类链接 · 库存待确认",
+      "catalogScope": "all-tw-bags",
+      "stockSignal": false,
+      "displayOnly": true,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
+    },
+    {
+      "id": "H056277CK18",
+      "name": "Evelyne III 29肩背包",
+      "color": "米色/原色",
+      "family": "Evelyne",
+      "matchedBy": "url",
+      "url": "https://www.hermes.com/tw/zh/product/evelyne-iii-29%E8%82%A9%E8%83%8C%E5%8C%85-H056277CK18/",
+      "image": "",
+      "observation": "新发现分类链接 · 库存待确认",
+      "catalogScope": "all-tw-bags",
+      "stockSignal": false,
+      "displayOnly": true,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
+    },
+    {
+      "id": "H087953CKAB",
+      "name": "Double Longe肩背包",
+      "color": "黑色",
+      "family": "其他包款",
+      "matchedBy": "official-bag-catalog",
+      "catalogScope": "all-tw-bags",
+      "url": "https://www.hermes.com/tw/zh/product/double-longe%E8%82%A9%E8%83%8C%E5%8C%85-H087953CKAB/",
+      "image": "",
+      "observation": "新发现分类链接 · 库存待确认",
+      "stockSignal": false,
+      "displayOnly": true,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
+      "purchaseVerified": false,
+      "purchaseVerification": "not-checked",
+      "purchaseCheckSkipReason": "http-403"
+    },
+    {
+      "id": "H087913CC89",
+      "name": "Besace Attelee肩背包",
+      "color": "黑色",
+      "family": "其他包款",
+      "matchedBy": "official-bag-catalog",
+      "catalogScope": "all-tw-bags",
+      "url": "https://www.hermes.com/tw/zh/product/besace-attelee%E8%82%A9%E8%83%8C%E5%8C%85-H087913CC89/",
+      "image": "",
+      "observation": "新发现分类链接 · 库存待确认",
+      "stockSignal": false,
+      "displayOnly": true,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
+    },
+    {
       "id": "H087953CCAL",
       "name": "Double Longe肩背包",
       "color": "米色/原色",
@@ -3228,13 +3293,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H069523CCAI",
@@ -3248,10 +3313,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H086959CK34",
@@ -3265,13 +3330,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:22:44.072Z",
-      "sourceCacheAgeSeconds": 3085,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H086422CK37",
@@ -3285,10 +3350,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H086915CK37",
@@ -3302,13 +3367,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H086248CK37",
@@ -3322,13 +3387,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:22:44.072Z",
-      "sourceCacheAgeSeconds": 3085,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H082119CK37",
@@ -3342,13 +3407,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:22:44.072Z",
-      "sourceCacheAgeSeconds": 3085,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H085414CKAO",
@@ -3362,13 +3427,56 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
+      "purchasePolicyVersion": 1,
+      "purchaseProductId": "H085414CKAO",
+      "purchaseUrl": "https://www.hermes.com/tw/zh/product/herbag-zip-20%E6%89%8B%E6%8F%90%E5%8C%85-H085414CKAO/",
+      "purchaseObservedAt": "2026-10-21T04:19:11.759Z",
+      "purchaseCheckedAt": "2026-10-21T04:19:11.943Z",
+      "purchaseHttpStatus": 200,
+      "purchaseHeaders": {
+        "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
+        "cf-cache-status": "HIT",
+        "date": "Wed, 21 Oct 2026 04:19:11 GMT"
+      },
+      "purchaseEvidence": {
+        "skuConfirmed": true,
+        "enabled": false,
+        "unavailable": true,
+        "blocked": false
+      },
+      "purchaseProofId": "github-browser:39543325347:H085414CKAO:2026-10-21T04:19:11.943Z",
+      "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
-      "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseRequestMode": "browser-default",
+      "purchaseDiagnostics": {
+        "title": "Herbag Zip 20手提包 | Hermès 愛馬仕台灣地區官網",
+        "buttons": [
+          {
+            "text": "加入購物車",
+            "visible": false,
+            "disabled": true,
+            "ariaDisabled": "true",
+            "rect": {
+              "x": 16,
+              "y": 536,
+              "width": 753,
+              "height": 48
+            },
+            "coveredBy": null
+          }
+        ],
+        "consentOptions": [],
+        "frontendResponses": [
+          {
+            "path": "/customer-session",
+            "status": 403
+          }
+        ]
+      }
     },
     {
       "id": "H086394CKAA",
@@ -3382,10 +3490,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H086430CKAG",
@@ -3399,10 +3507,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H088228CK2D",
@@ -3416,10 +3524,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:22:44.072Z",
-      "sourceCacheAgeSeconds": 3085,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
+      "purchaseVerified": false,
+      "purchaseVerification": "not-checked",
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H086958CK2D",
@@ -3433,13 +3544,42 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:22:44.072Z",
-      "sourceCacheAgeSeconds": 3085,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
+      "purchasePolicyVersion": 1,
+      "purchaseProductId": "H086958CK2D",
+      "purchaseUrl": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086958CK2D/",
+      "purchaseObservedAt": "2026-10-21T04:19:13.219Z",
+      "purchaseCheckedAt": "2026-10-21T04:19:13.232Z",
+      "purchaseHttpStatus": 403,
+      "purchaseHeaders": {
+        "cache-control": "max-age=0, private, no-cache, no-store, must-revalidate",
+        "cf-cache-status": "BYPASS",
+        "date": "Wed, 21 Oct 2026 04:19:12 GMT"
+      },
+      "purchaseEvidence": {
+        "skuConfirmed": false,
+        "enabled": false,
+        "unavailable": false,
+        "blocked": true
+      },
+      "purchaseProofId": "github-browser:39543325347:H086958CK2D:2026-10-21T04:19:13.232Z",
+      "purchaseVerification": "error",
       "purchaseVerified": false,
-      "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseRequestMode": "browser-default",
+      "purchaseDiagnostics": {
+        "title": "hermes.com",
+        "buttons": [],
+        "consentOptions": [],
+        "frontendResponses": [
+          {
+            "path": "/customer-session",
+            "status": 403
+          }
+        ]
+      }
     },
     {
       "id": "H083589CK2D",
@@ -3453,13 +3593,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:22:44.072Z",
-      "sourceCacheAgeSeconds": 3085,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H086729CK2D",
@@ -3473,10 +3613,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H082119CK2D",
@@ -3490,13 +3630,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:22:44.072Z",
-      "sourceCacheAgeSeconds": 3085,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H086430CCAJ",
@@ -3510,10 +3650,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H085414CKAJ",
@@ -3527,10 +3667,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
+      "purchaseVerified": false,
+      "purchaseVerification": "not-checked",
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H086583CCAJ",
@@ -3544,63 +3687,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
-      "purchasePolicyVersion": 1,
-      "purchaseProductId": "H086583CCAJ",
-      "purchaseUrl": "https://www.hermes.com/tw/zh/product/tablier-sellier%E8%82%A9%E8%83%8C%E5%8C%85-H086583CCAJ/",
-      "purchaseObservedAt": "2026-10-21T04:14:10.908Z",
-      "purchaseCheckedAt": "2026-10-21T04:14:11.138Z",
-      "purchaseHttpStatus": 200,
-      "purchaseHeaders": {
-        "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
-        "cf-cache-status": "HIT",
-        "date": "Wed, 21 Oct 2026 04:14:10 GMT"
-      },
-      "purchaseEvidence": {
-        "skuConfirmed": true,
-        "enabled": false,
-        "unavailable": true,
-        "blocked": true
-      },
-      "purchaseProofId": "github-browser:39542864236:H086583CCAJ:2026-10-21T04:14:11.138Z",
-      "purchaseVerification": "error",
-      "purchaseVerified": false,
-      "purchaseRequestMode": "browser-default",
-      "purchaseDiagnostics": {
-        "title": "Tablier Sellier肩背包 | Hermès 愛馬仕台灣地區官網",
-        "buttons": [
-          {
-            "text": "加入購物車",
-            "visible": false,
-            "disabled": true,
-            "ariaDisabled": "true",
-            "rect": {
-              "x": 16,
-              "y": 536,
-              "width": 768,
-              "height": 48
-            },
-            "coveredBy": {
-              "tag": "IFRAME",
-              "text": ""
-            }
-          }
-        ],
-        "consentOptions": [],
-        "frontendResponses": [
-          {
-            "path": "/customer-session",
-            "status": 403
-          },
-          {
-            "path": "/customer-session",
-            "status": 403
-          }
-        ]
-      }
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H086958CK47",
@@ -3614,13 +3704,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:22:44.072Z",
-      "sourceCacheAgeSeconds": 3085,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H086915CKP0",
@@ -3634,13 +3724,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H069573CKDN",
@@ -3654,13 +3744,56 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
+      "purchasePolicyVersion": 1,
+      "purchaseProductId": "H069573CKDN",
+      "purchaseUrl": "https://www.hermes.com/tw/zh/product/garden-party-30%E6%89%8B%E6%8F%90%E5%8C%85-H069573CKDN/",
+      "purchaseObservedAt": "2026-10-21T04:19:12.523Z",
+      "purchaseCheckedAt": "2026-10-21T04:19:12.705Z",
+      "purchaseHttpStatus": 200,
+      "purchaseHeaders": {
+        "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
+        "cf-cache-status": "HIT",
+        "date": "Wed, 21 Oct 2026 04:19:12 GMT"
+      },
+      "purchaseEvidence": {
+        "skuConfirmed": true,
+        "enabled": false,
+        "unavailable": true,
+        "blocked": false
+      },
+      "purchaseProofId": "github-browser:39543325347:H069573CKDN:2026-10-21T04:19:12.705Z",
+      "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
-      "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseRequestMode": "browser-default",
+      "purchaseDiagnostics": {
+        "title": "Garden Party 30手提包 | Hermès 愛馬仕台灣地區官網",
+        "buttons": [
+          {
+            "text": "加入購物車",
+            "visible": false,
+            "disabled": true,
+            "ariaDisabled": "true",
+            "rect": {
+              "x": 16,
+              "y": 536,
+              "width": 753,
+              "height": 48
+            },
+            "coveredBy": null
+          }
+        ],
+        "consentOptions": [],
+        "frontendResponses": [
+          {
+            "path": "/customer-session",
+            "status": 403
+          }
+        ]
+      }
     },
     {
       "id": "H085414CKAE",
@@ -3674,10 +3807,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H086418CKAP",
@@ -3691,10 +3824,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H085942CKAD",
@@ -3708,10 +3841,10 @@
       "catalogScope": "all-tw-bags",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H088612CKAW",
@@ -3725,10 +3858,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H086430CKAH",
@@ -3742,10 +3875,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H087943CCAI",
@@ -3759,10 +3892,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H087941CK89",
@@ -3776,10 +3909,10 @@
       "catalogScope": "all-tw-bags",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H084948CP89",
@@ -3793,13 +3926,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H086430CKAA",
@@ -3813,10 +3946,10 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": false,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true
     },
     {
       "id": "H086955CC89",
@@ -3830,13 +3963,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H083939CP59",
@@ -3850,13 +3983,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H086915CK89",
@@ -3870,13 +4003,13 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": false,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H087960CT89",
@@ -3890,29 +4023,43 @@
       "observation": "新发现分类链接 · 库存待确认",
       "stockSignal": true,
       "displayOnly": true,
-      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "sourceDataAt": "2026-10-21T03:30:43.835Z",
-      "sourceCacheAgeSeconds": 2603,
-      "sourceFresh": false,
+      "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
+      "sourceDataAt": "2026-10-21T04:10:13.843Z",
+      "sourceCacheAgeSeconds": 531,
+      "sourceFresh": true,
       "purchaseVerified": false,
       "purchaseVerification": "not-checked",
-      "purchaseCheckSkipReason": "blocked"
+      "purchaseCheckSkipReason": "http-403"
     }
   ],
   "checks": [
     {
-      "id": "H087913CC89",
-      "url": "https://www.hermes.com/tw/zh/product/besace-attelee%E8%82%A9%E8%83%8C%E5%8C%85-H087913CC89/",
+      "id": "H085945CCBX",
+      "url": "https://www.hermes.com/tw/zh/product/evelyne-16-amazone%E8%82%A9%E8%83%8C%E5%8C%85-H085945CCBX/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-21T04:14:10.052Z"
+      "checkedAt": "2026-10-21T04:19:11.110Z"
     },
     {
-      "id": "H086583CCAJ",
-      "url": "https://www.hermes.com/tw/zh/product/tablier-sellier%E8%82%A9%E8%83%8C%E5%8C%85-H086583CCAJ/",
-      "status": "error",
+      "id": "H085414CKAO",
+      "url": "https://www.hermes.com/tw/zh/product/herbag-zip-20%E6%89%8B%E6%8F%90%E5%8C%85-H085414CKAO/",
+      "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-21T04:14:11.138Z"
+      "checkedAt": "2026-10-21T04:19:11.943Z"
+    },
+    {
+      "id": "H069573CKDN",
+      "url": "https://www.hermes.com/tw/zh/product/garden-party-30%E6%89%8B%E6%8F%90%E5%8C%85-H069573CKDN/",
+      "status": "cached-or-unknown",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-21T04:19:12.705Z"
+    },
+    {
+      "id": "H086958CK2D",
+      "url": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086958CK2D/",
+      "status": "error",
+      "httpStatus": 403,
+      "checkedAt": "2026-10-21T04:19:13.232Z"
     }
   ],
   "purchaseObservations": {
@@ -3949,7 +4096,7 @@
       "url": "https://www.hermes.com/tw/zh/product/evelyne-16-amazone%E8%82%A9%E8%83%8C%E5%8C%85-H085945CCBX/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-21T03:28:17.285Z"
+      "checkedAt": "2026-10-21T04:19:11.110Z"
     },
     "H086729CK18": {
       "id": "H086729CK18",
@@ -4040,7 +4187,7 @@
       "url": "https://www.hermes.com/tw/zh/product/herbag-zip-20%E6%89%8B%E6%8F%90%E5%8C%85-H085414CKAO/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-21T03:28:17.906Z"
+      "checkedAt": "2026-10-21T04:19:11.943Z"
     },
     "H086394CKAA": {
       "id": "H086394CKAA",
@@ -4066,9 +4213,9 @@
     "H086958CK2D": {
       "id": "H086958CK2D",
       "url": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086958CK2D/",
-      "status": "cached-or-unknown",
-      "httpStatus": 200,
-      "checkedAt": "2026-10-21T03:28:19.332Z"
+      "status": "error",
+      "httpStatus": 403,
+      "checkedAt": "2026-10-21T04:19:13.232Z"
     },
     "H083589CK2D": {
       "id": "H083589CK2D",
@@ -4131,7 +4278,7 @@
       "url": "https://www.hermes.com/tw/zh/product/garden-party-30%E6%89%8B%E6%8F%90%E5%8C%85-H069573CKDN/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-21T03:28:18.656Z"
+      "checkedAt": "2026-10-21T04:19:12.705Z"
     },
     "H085414CKAE": {
       "id": "H085414CKAE",
