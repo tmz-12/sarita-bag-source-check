@@ -7,31 +7,31 @@
     "headless": false,
     "serial": true,
     "budgetMs": 45000,
-    "stopReason": null,
+    "stopReason": "http-403",
     "probeId": null
   },
   "scope": "all-tw-bags",
   "repository": "tmz-12/sarita-bag-source-check",
-  "runId": "41001582068",
-  "checkedAt": "2026-10-30T04:12:51.451Z",
+  "runId": "41002052004",
+  "checkedAt": "2026-10-30T04:17:47.626Z",
   "method": "github-browser",
-  "ok": true,
+  "ok": false,
   "sources": [
     {
       "url": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "observedAt": "2026-10-30T04:12:36.573Z",
+      "observedAt": "2026-10-30T04:17:35.209Z",
       "status": 200,
       "headers": {
-        "age": "787",
+        "age": "1086",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:35 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:34 GMT"
       },
       "method": "github-browser-html",
       "renderWaitCompleted": true,
       "apiStatus": null,
       "apiError": null,
-      "ok": true,
+      "ok": false,
       "complete": true,
       "candidates": [
         {
@@ -47,20 +47,19 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchasePolicyVersion": 1,
           "purchaseProductId": "H082119CK18",
           "purchaseUrl": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK18/",
-          "purchaseObservedAt": "2026-10-30T04:12:47.658Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:47.820Z",
+          "purchaseObservedAt": "2026-10-30T04:17:44.295Z",
+          "purchaseCheckedAt": "2026-10-30T04:17:44.424Z",
           "purchaseHttpStatus": 200,
           "purchaseHeaders": {
-            "age": "1045",
             "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
             "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:46 GMT"
+            "date": "Fri, 30 Oct 2026 04:17:43 GMT"
           },
           "purchaseEvidence": {
             "skuConfirmed": true,
@@ -68,7 +67,7 @@
             "unavailable": false,
             "blocked": false
           },
-          "purchaseProofId": "github-browser:41001582068:H082119CK18:2026-10-30T04:12:47.820Z",
+          "purchaseProofId": "github-browser:41002052004:H082119CK18:2026-10-30T04:17:44.424Z",
           "purchaseVerification": "cached-or-unknown",
           "purchaseVerified": false,
           "purchaseRequestMode": "browser-default",
@@ -94,6 +93,10 @@
               {
                 "path": "/customer-session",
                 "status": 403
+              },
+              {
+                "path": "/sync-form",
+                "status": 403
               }
             ]
           }
@@ -111,20 +114,19 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchasePolicyVersion": 1,
           "purchaseProductId": "H086959CK34",
           "purchaseUrl": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086959CK34/",
-          "purchaseObservedAt": "2026-10-30T04:12:48.031Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:48.192Z",
+          "purchaseObservedAt": "2026-10-30T04:17:44.880Z",
+          "purchaseCheckedAt": "2026-10-30T04:17:45.006Z",
           "purchaseHttpStatus": 200,
           "purchaseHeaders": {
-            "age": "1046",
             "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
             "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:47 GMT"
+            "date": "Fri, 30 Oct 2026 04:17:44 GMT"
           },
           "purchaseEvidence": {
             "skuConfirmed": true,
@@ -132,7 +134,7 @@
             "unavailable": false,
             "blocked": false
           },
-          "purchaseProofId": "github-browser:41001582068:H086959CK34:2026-10-30T04:12:48.192Z",
+          "purchaseProofId": "github-browser:41002052004:H086959CK34:2026-10-30T04:17:45.006Z",
           "purchaseVerification": "cached-or-unknown",
           "purchaseVerified": false,
           "purchaseRequestMode": "browser-default",
@@ -154,7 +156,16 @@
               }
             ],
             "consentOptions": [],
-            "frontendResponses": []
+            "frontendResponses": [
+              {
+                "path": "/sync-form",
+                "status": 403
+              },
+              {
+                "path": "/customer-session",
+                "status": 403
+              }
+            ]
           }
         },
         {
@@ -170,20 +181,20 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchasePolicyVersion": 1,
           "purchaseProductId": "H086915CK37",
           "purchaseUrl": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CK37/",
-          "purchaseObservedAt": "2026-10-30T04:12:46.252Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:46.406Z",
+          "purchaseObservedAt": "2026-10-30T04:17:43.246Z",
+          "purchaseCheckedAt": "2026-10-30T04:17:43.359Z",
           "purchaseHttpStatus": 200,
           "purchaseHeaders": {
-            "age": "2922",
+            "age": "3219",
             "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
             "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:46 GMT"
+            "date": "Fri, 30 Oct 2026 04:17:43 GMT"
           },
           "purchaseEvidence": {
             "skuConfirmed": true,
@@ -191,7 +202,7 @@
             "unavailable": false,
             "blocked": false
           },
-          "purchaseProofId": "github-browser:41001582068:H086915CK37:2026-10-30T04:12:46.406Z",
+          "purchaseProofId": "github-browser:41002052004:H086915CK37:2026-10-30T04:17:43.359Z",
           "purchaseVerification": "cached-or-unknown",
           "purchaseVerified": false,
           "purchaseRequestMode": "browser-default",
@@ -213,12 +224,7 @@
               }
             ],
             "consentOptions": [],
-            "frontendResponses": [
-              {
-                "path": "/customer-session",
-                "status": 403
-              }
-            ]
+            "frontendResponses": []
           }
         },
         {
@@ -234,20 +240,19 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchasePolicyVersion": 1,
           "purchaseProductId": "H086248CK37",
           "purchaseUrl": "https://www.hermes.com/tw/zh/product/hermes-messenger-57%E8%82%A9%E8%83%8C%E5%8C%85-H086248CK37/",
-          "purchaseObservedAt": "2026-10-30T04:12:48.402Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:48.571Z",
+          "purchaseObservedAt": "2026-10-30T04:17:45.477Z",
+          "purchaseCheckedAt": "2026-10-30T04:17:45.606Z",
           "purchaseHttpStatus": 200,
           "purchaseHeaders": {
-            "age": "1046",
             "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
             "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:48 GMT"
+            "date": "Fri, 30 Oct 2026 04:17:45 GMT"
           },
           "purchaseEvidence": {
             "skuConfirmed": true,
@@ -255,7 +260,7 @@
             "unavailable": false,
             "blocked": false
           },
-          "purchaseProofId": "github-browser:41001582068:H086248CK37:2026-10-30T04:12:48.571Z",
+          "purchaseProofId": "github-browser:41002052004:H086248CK37:2026-10-30T04:17:45.606Z",
           "purchaseVerification": "cached-or-unknown",
           "purchaseVerified": false,
           "purchaseRequestMode": "browser-default",
@@ -277,7 +282,16 @@
               }
             ],
             "consentOptions": [],
-            "frontendResponses": []
+            "frontendResponses": [
+              {
+                "path": "/sync-form",
+                "status": 403
+              },
+              {
+                "path": "/customer-session",
+                "status": 403
+              }
+            ]
           }
         },
         {
@@ -293,20 +307,20 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchasePolicyVersion": 1,
           "purchaseProductId": "H082119CK37",
           "purchaseUrl": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK37/",
-          "purchaseObservedAt": "2026-10-30T04:12:48.782Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:48.950Z",
+          "purchaseObservedAt": "2026-10-30T04:17:45.780Z",
+          "purchaseCheckedAt": "2026-10-30T04:17:45.894Z",
           "purchaseHttpStatus": 200,
           "purchaseHeaders": {
-            "age": "1827",
+            "age": "2124",
             "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
             "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:48 GMT"
+            "date": "Fri, 30 Oct 2026 04:17:45 GMT"
           },
           "purchaseEvidence": {
             "skuConfirmed": true,
@@ -314,7 +328,7 @@
             "unavailable": false,
             "blocked": false
           },
-          "purchaseProofId": "github-browser:41001582068:H082119CK37:2026-10-30T04:12:48.950Z",
+          "purchaseProofId": "github-browser:41002052004:H082119CK37:2026-10-30T04:17:45.894Z",
           "purchaseVerification": "cached-or-unknown",
           "purchaseVerified": false,
           "purchaseRequestMode": "browser-default",
@@ -352,20 +366,19 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchasePolicyVersion": 1,
           "purchaseProductId": "H088228CK2D",
           "purchaseUrl": "https://www.hermes.com/tw/zh/product/tour-de-piste%E8%82%A9%E8%83%8C%E5%8C%85-H088228CK2D/",
-          "purchaseObservedAt": "2026-10-30T04:12:49.156Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:49.325Z",
+          "purchaseObservedAt": "2026-10-30T04:17:46.381Z",
+          "purchaseCheckedAt": "2026-10-30T04:17:46.491Z",
           "purchaseHttpStatus": 200,
           "purchaseHeaders": {
-            "age": "1047",
             "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
             "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:48 GMT"
+            "date": "Fri, 30 Oct 2026 04:17:46 GMT"
           },
           "purchaseEvidence": {
             "skuConfirmed": true,
@@ -373,7 +386,7 @@
             "unavailable": false,
             "blocked": false
           },
-          "purchaseProofId": "github-browser:41001582068:H088228CK2D:2026-10-30T04:12:49.325Z",
+          "purchaseProofId": "github-browser:41002052004:H088228CK2D:2026-10-30T04:17:46.491Z",
           "purchaseVerification": "cached-or-unknown",
           "purchaseVerified": false,
           "purchaseRequestMode": "browser-default",
@@ -395,7 +408,16 @@
               }
             ],
             "consentOptions": [],
-            "frontendResponses": []
+            "frontendResponses": [
+              {
+                "path": "/customer-session",
+                "status": 403
+              },
+              {
+                "path": "/sync-form",
+                "status": 403
+              }
+            ]
           }
         },
         {
@@ -411,20 +433,19 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchasePolicyVersion": 1,
           "purchaseProductId": "H086958CK2D",
           "purchaseUrl": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086958CK2D/",
-          "purchaseObservedAt": "2026-10-30T04:12:49.561Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:49.726Z",
+          "purchaseObservedAt": "2026-10-30T04:17:47.066Z",
+          "purchaseCheckedAt": "2026-10-30T04:17:47.150Z",
           "purchaseHttpStatus": 200,
           "purchaseHeaders": {
-            "age": "1047",
             "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
             "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:49 GMT"
+            "date": "Fri, 30 Oct 2026 04:17:46 GMT"
           },
           "purchaseEvidence": {
             "skuConfirmed": true,
@@ -432,7 +453,7 @@
             "unavailable": false,
             "blocked": false
           },
-          "purchaseProofId": "github-browser:41001582068:H086958CK2D:2026-10-30T04:12:49.726Z",
+          "purchaseProofId": "github-browser:41002052004:H086958CK2D:2026-10-30T04:17:47.150Z",
           "purchaseVerification": "cached-or-unknown",
           "purchaseVerified": false,
           "purchaseRequestMode": "browser-default",
@@ -454,7 +475,16 @@
               }
             ],
             "consentOptions": [],
-            "frontendResponses": []
+            "frontendResponses": [
+              {
+                "path": "/sync-form",
+                "status": 403
+              },
+              {
+                "path": "/customer-session",
+                "status": 403
+              }
+            ]
           }
         },
         {
@@ -470,50 +500,44 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchasePolicyVersion": 1,
           "purchaseProductId": "H082119CK2D",
           "purchaseUrl": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK2D/",
-          "purchaseObservedAt": "2026-10-30T04:12:49.946Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:50.111Z",
-          "purchaseHttpStatus": 200,
+          "purchaseObservedAt": "2026-10-30T04:17:47.583Z",
+          "purchaseCheckedAt": "2026-10-30T04:17:47.584Z",
+          "purchaseHttpStatus": 403,
           "purchaseHeaders": {
-            "age": "3377",
-            "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
-            "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:49 GMT"
+            "cache-control": "max-age=0, private, no-cache, no-store, must-revalidate",
+            "cf-cache-status": "BYPASS",
+            "date": "Fri, 30 Oct 2026 04:17:47 GMT"
           },
           "purchaseEvidence": {
-            "skuConfirmed": true,
+            "skuConfirmed": false,
             "enabled": false,
             "unavailable": false,
-            "blocked": false
+            "blocked": true
           },
-          "purchaseProofId": "github-browser:41001582068:H082119CK2D:2026-10-30T04:12:50.111Z",
-          "purchaseVerification": "cached-or-unknown",
+          "purchaseProofId": "github-browser:41002052004:H082119CK2D:2026-10-30T04:17:47.584Z",
+          "purchaseVerification": "error",
           "purchaseVerified": false,
           "purchaseRequestMode": "browser-default",
           "purchaseDiagnostics": {
-            "title": "Steve light junior郵差包 | Hermès 愛馬仕台灣地區官網",
-            "buttons": [
-              {
-                "text": "加入購物車",
-                "visible": false,
-                "disabled": false,
-                "ariaDisabled": null,
-                "rect": {
-                  "x": 16,
-                  "y": 521,
-                  "width": 753,
-                  "height": 48
-                },
-                "coveredBy": null
-              }
-            ],
+            "title": "hermes.com",
+            "buttons": [],
             "consentOptions": [],
-            "frontendResponses": []
+            "frontendResponses": [
+              {
+                "path": "/customer-session",
+                "status": 403
+              },
+              {
+                "path": "/sync-form",
+                "status": 403
+              }
+            ]
           }
         },
         {
@@ -529,20 +553,20 @@
           "stockSignal": true,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchasePolicyVersion": 1,
           "purchaseProductId": "H086915CKP0",
           "purchaseUrl": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CKP0/",
-          "purchaseObservedAt": "2026-10-30T04:12:46.654Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:46.848Z",
+          "purchaseObservedAt": "2026-10-30T04:17:43.559Z",
+          "purchaseCheckedAt": "2026-10-30T04:17:43.677Z",
           "purchaseHttpStatus": 200,
           "purchaseHeaders": {
-            "age": "2350",
+            "age": "2647",
             "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
             "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:46 GMT"
+            "date": "Fri, 30 Oct 2026 04:17:43 GMT"
           },
           "purchaseEvidence": {
             "skuConfirmed": true,
@@ -550,7 +574,7 @@
             "unavailable": false,
             "blocked": false
           },
-          "purchaseProofId": "github-browser:41001582068:H086915CKP0:2026-10-30T04:12:46.848Z",
+          "purchaseProofId": "github-browser:41002052004:H086915CKP0:2026-10-30T04:17:43.677Z",
           "purchaseVerification": "cached-or-unknown",
           "purchaseVerified": false,
           "purchaseRequestMode": "browser-default",
@@ -588,51 +612,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
-          "purchasePolicyVersion": 1,
-          "purchaseProductId": "H083939CP59",
-          "purchaseUrl": "https://www.hermes.com/tw/zh/product/fonsbelle-chaine%E8%82%A9%E8%83%8C%E5%8C%85-H083939CP59/",
-          "purchaseObservedAt": "2026-10-30T04:12:50.350Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:50.522Z",
-          "purchaseHttpStatus": 200,
-          "purchaseHeaders": {
-            "age": "2354",
-            "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
-            "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:50 GMT"
-          },
-          "purchaseEvidence": {
-            "skuConfirmed": true,
-            "enabled": false,
-            "unavailable": false,
-            "blocked": false
-          },
-          "purchaseProofId": "github-browser:41001582068:H083939CP59:2026-10-30T04:12:50.522Z",
-          "purchaseVerification": "cached-or-unknown",
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchaseVerified": false,
-          "purchaseRequestMode": "browser-default",
-          "purchaseDiagnostics": {
-            "title": "Fonsbelle Chaine肩背包 - 紫色 | Hermès 愛馬仕台灣地區官網",
-            "buttons": [
-              {
-                "text": "加入購物車",
-                "visible": false,
-                "disabled": false,
-                "ariaDisabled": null,
-                "rect": {
-                  "x": 16,
-                  "y": 521,
-                  "width": 753,
-                  "height": 48
-                },
-                "coveredBy": null
-              }
-            ],
-            "consentOptions": [],
-            "frontendResponses": []
-          }
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H086915CK89",
@@ -647,20 +632,20 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchasePolicyVersion": 1,
           "purchaseProductId": "H086915CK89",
           "purchaseUrl": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CK89/",
-          "purchaseObservedAt": "2026-10-30T04:12:45.810Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:45.999Z",
+          "purchaseObservedAt": "2026-10-30T04:17:42.965Z",
+          "purchaseCheckedAt": "2026-10-30T04:17:43.086Z",
           "purchaseHttpStatus": 200,
           "purchaseHeaders": {
-            "age": "2349",
+            "age": "2647",
             "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
             "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:45 GMT"
+            "date": "Fri, 30 Oct 2026 04:17:42 GMT"
           },
           "purchaseEvidence": {
             "skuConfirmed": true,
@@ -668,7 +653,7 @@
             "unavailable": false,
             "blocked": false
           },
-          "purchaseProofId": "github-browser:41001582068:H086915CK89:2026-10-30T04:12:45.999Z",
+          "purchaseProofId": "github-browser:41002052004:H086915CK89:2026-10-30T04:17:43.086Z",
           "purchaseVerification": "cached-or-unknown",
           "purchaseVerified": false,
           "purchaseRequestMode": "browser-default",
@@ -706,51 +691,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
-          "purchasePolicyVersion": 1,
-          "purchaseProductId": "H084948CP89",
-          "purchaseUrl": "https://www.hermes.com/tw/zh/product/en-piste%E6%89%8B%E6%8B%BF%E5%8C%85-H084948CP89/",
-          "purchaseObservedAt": "2026-10-30T04:12:51.246Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:51.426Z",
-          "purchaseHttpStatus": 200,
-          "purchaseHeaders": {
-            "age": "2927",
-            "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
-            "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:51 GMT"
-          },
-          "purchaseEvidence": {
-            "skuConfirmed": true,
-            "enabled": false,
-            "unavailable": false,
-            "blocked": false
-          },
-          "purchaseProofId": "github-browser:41001582068:H084948CP89:2026-10-30T04:12:51.426Z",
-          "purchaseVerification": "cached-or-unknown",
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchaseVerified": false,
-          "purchaseRequestMode": "browser-default",
-          "purchaseDiagnostics": {
-            "title": "En Piste手拿包 - 黑色 | Hermès 愛馬仕台灣地區官網",
-            "buttons": [
-              {
-                "text": "加入購物車",
-                "visible": false,
-                "disabled": false,
-                "ariaDisabled": null,
-                "rect": {
-                  "x": 16,
-                  "y": 521,
-                  "width": 753,
-                  "height": 48
-                },
-                "coveredBy": null
-              }
-            ],
-            "consentOptions": [],
-            "frontendResponses": []
-          }
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H086955CC89",
@@ -765,51 +711,12 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
-          "purchasePolicyVersion": 1,
-          "purchaseProductId": "H086955CC89",
-          "purchaseUrl": "https://www.hermes.com/tw/zh/product/sanglons%E6%89%8B%E6%8B%BF%E5%8C%85-H086955CC89/",
-          "purchaseObservedAt": "2026-10-30T04:12:50.853Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:51.016Z",
-          "purchaseHttpStatus": 200,
-          "purchaseHeaders": {
-            "age": "1048",
-            "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
-            "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:50 GMT"
-          },
-          "purchaseEvidence": {
-            "skuConfirmed": true,
-            "enabled": false,
-            "unavailable": false,
-            "blocked": false
-          },
-          "purchaseProofId": "github-browser:41001582068:H086955CC89:2026-10-30T04:12:51.016Z",
-          "purchaseVerification": "cached-or-unknown",
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchaseVerified": false,
-          "purchaseRequestMode": "browser-default",
-          "purchaseDiagnostics": {
-            "title": "Sanglons手拿包 - 黑色 | Hermès 愛馬仕台灣地區官網",
-            "buttons": [
-              {
-                "text": "加入購物車",
-                "visible": false,
-                "disabled": false,
-                "ariaDisabled": null,
-                "rect": {
-                  "x": 16,
-                  "y": 521,
-                  "width": 753,
-                  "height": 48
-                },
-                "coveredBy": null
-              }
-            ],
-            "consentOptions": [],
-            "frontendResponses": []
-          }
+          "purchaseVerification": "not-checked",
+          "purchaseCheckSkipReason": "http-403"
         },
         {
           "id": "H087960CT89",
@@ -824,20 +731,20 @@
           "stockSignal": true,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:59:32.667Z",
-          "sourceCacheAgeSeconds": 787,
-          "sourceFresh": true,
+          "sourceDataAt": "2026-10-30T03:59:32.002Z",
+          "sourceCacheAgeSeconds": 1086,
+          "sourceFresh": false,
           "purchasePolicyVersion": 1,
           "purchaseProductId": "H087960CT89",
           "purchaseUrl": "https://www.hermes.com/tw/zh/product/mallette%E6%89%8B%E6%8F%90%E5%8C%85-H087960CT89/",
-          "purchaseObservedAt": "2026-10-30T04:12:45.262Z",
-          "purchaseCheckedAt": "2026-10-30T04:12:45.577Z",
+          "purchaseObservedAt": "2026-10-30T04:17:42.599Z",
+          "purchaseCheckedAt": "2026-10-30T04:17:42.795Z",
           "purchaseHttpStatus": 200,
           "purchaseHeaders": {
-            "age": "1043",
+            "age": "1340",
             "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
             "cf-cache-status": "HIT",
-            "date": "Fri, 30 Oct 2026 04:12:44 GMT"
+            "date": "Fri, 30 Oct 2026 04:17:42 GMT"
           },
           "purchaseEvidence": {
             "skuConfirmed": true,
@@ -845,7 +752,7 @@
             "unavailable": false,
             "blocked": false
           },
-          "purchaseProofId": "github-browser:41001582068:H087960CT89:2026-10-30T04:12:45.577Z",
+          "purchaseProofId": "github-browser:41002052004:H087960CT89:2026-10-30T04:17:42.795Z",
           "purchaseVerification": "cached-or-unknown",
           "purchaseVerified": false,
           "purchaseRequestMode": "browser-default",
@@ -873,7 +780,7 @@
       ],
       "productCount": 14,
       "total": 14,
-      "error": null,
+      "error": "分类资料有缓存或年龄无法确认，另须购买页面核验",
       "baselineCandidates": [
         {
           "id": "H082119CK18",
@@ -1073,19 +980,19 @@
         }
       ],
       "readable": true,
-      "cacheAgeSeconds": 787,
+      "cacheAgeSeconds": 1086,
       "cacheStatus": "HIT",
-      "sourceDate": "Fri, 30 Oct 2026 04:12:35 GMT"
+      "sourceDate": "Fri, 30 Oct 2026 04:17:34 GMT"
     },
     {
       "url": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-      "observedAt": "2026-10-30T04:12:40.169Z",
+      "observedAt": "2026-10-30T04:17:38.394Z",
       "status": 200,
       "headers": {
-        "age": "2856",
+        "age": "3154",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:39 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:38 GMT"
       },
       "method": "github-browser-html",
       "renderWaitCompleted": true,
@@ -1107,8 +1014,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:25:06.185Z",
-          "sourceCacheAgeSeconds": 2856,
+          "sourceDataAt": "2026-10-30T03:25:06.077Z",
+          "sourceCacheAgeSeconds": 3154,
           "sourceFresh": false
         },
         {
@@ -1124,8 +1031,8 @@
           "stockSignal": true,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:25:06.185Z",
-          "sourceCacheAgeSeconds": 2856,
+          "sourceDataAt": "2026-10-30T03:25:06.077Z",
+          "sourceCacheAgeSeconds": 3154,
           "sourceFresh": false
         },
         {
@@ -1141,8 +1048,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:25:06.185Z",
-          "sourceCacheAgeSeconds": 2856,
+          "sourceDataAt": "2026-10-30T03:25:06.077Z",
+          "sourceCacheAgeSeconds": 3154,
           "sourceFresh": false
         },
         {
@@ -1158,8 +1065,8 @@
           "stockSignal": true,
           "displayOnly": true,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:25:06.185Z",
-          "sourceCacheAgeSeconds": 2856,
+          "sourceDataAt": "2026-10-30T03:25:06.077Z",
+          "sourceCacheAgeSeconds": 3154,
           "sourceFresh": false
         },
         {
@@ -1175,8 +1082,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:25:06.185Z",
-          "sourceCacheAgeSeconds": 2856,
+          "sourceDataAt": "2026-10-30T03:25:06.077Z",
+          "sourceCacheAgeSeconds": 3154,
           "sourceFresh": false
         },
         {
@@ -1192,8 +1099,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:25:06.185Z",
-          "sourceCacheAgeSeconds": 2856,
+          "sourceDataAt": "2026-10-30T03:25:06.077Z",
+          "sourceCacheAgeSeconds": 3154,
           "sourceFresh": false
         },
         {
@@ -1209,8 +1116,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/womens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:25:06.185Z",
-          "sourceCacheAgeSeconds": 2856,
+          "sourceDataAt": "2026-10-30T03:25:06.077Z",
+          "sourceCacheAgeSeconds": 3154,
           "sourceFresh": false
         }
       ],
@@ -1318,19 +1225,19 @@
         }
       ],
       "readable": true,
-      "cacheAgeSeconds": 2856,
+      "cacheAgeSeconds": 3154,
       "cacheStatus": "HIT",
-      "sourceDate": "Fri, 30 Oct 2026 04:12:39 GMT"
+      "sourceDate": "Fri, 30 Oct 2026 04:17:38 GMT"
     },
     {
       "url": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-      "observedAt": "2026-10-30T04:12:42.667Z",
+      "observedAt": "2026-10-30T04:17:40.418Z",
       "status": 200,
       "headers": {
-        "age": "2258",
+        "age": "2556",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:42 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:40 GMT"
       },
       "method": "github-browser-html",
       "renderWaitCompleted": true,
@@ -1352,8 +1259,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:35:06.766Z",
-          "sourceCacheAgeSeconds": 2258,
+          "sourceDataAt": "2026-10-30T03:35:06.241Z",
+          "sourceCacheAgeSeconds": 2556,
           "sourceFresh": false
         },
         {
@@ -1369,8 +1276,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:35:06.766Z",
-          "sourceCacheAgeSeconds": 2258,
+          "sourceDataAt": "2026-10-30T03:35:06.241Z",
+          "sourceCacheAgeSeconds": 2556,
           "sourceFresh": false
         },
         {
@@ -1386,8 +1293,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:35:06.766Z",
-          "sourceCacheAgeSeconds": 2258,
+          "sourceDataAt": "2026-10-30T03:35:06.241Z",
+          "sourceCacheAgeSeconds": 2556,
           "sourceFresh": false
         },
         {
@@ -1403,8 +1310,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:35:06.766Z",
-          "sourceCacheAgeSeconds": 2258,
+          "sourceDataAt": "2026-10-30T03:35:06.241Z",
+          "sourceCacheAgeSeconds": 2556,
           "sourceFresh": false
         },
         {
@@ -1420,8 +1327,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:35:06.766Z",
-          "sourceCacheAgeSeconds": 2258,
+          "sourceDataAt": "2026-10-30T03:35:06.241Z",
+          "sourceCacheAgeSeconds": 2556,
           "sourceFresh": false
         },
         {
@@ -1437,8 +1344,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:35:06.766Z",
-          "sourceCacheAgeSeconds": 2258,
+          "sourceDataAt": "2026-10-30T03:35:06.241Z",
+          "sourceCacheAgeSeconds": 2556,
           "sourceFresh": false
         },
         {
@@ -1454,8 +1361,8 @@
           "stockSignal": true,
           "displayOnly": false,
           "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/mens-bags-and-clutches/",
-          "sourceDataAt": "2026-10-30T03:35:06.766Z",
-          "sourceCacheAgeSeconds": 2258,
+          "sourceDataAt": "2026-10-30T03:35:06.241Z",
+          "sourceCacheAgeSeconds": 2556,
           "sourceFresh": false
         }
       ],
@@ -1563,9 +1470,9 @@
         }
       ],
       "readable": true,
-      "cacheAgeSeconds": 2258,
+      "cacheAgeSeconds": 2556,
       "cacheStatus": "HIT",
-      "sourceDate": "Fri, 30 Oct 2026 04:12:42 GMT"
+      "sourceDate": "Fri, 30 Oct 2026 04:17:40 GMT"
     }
   ],
   "candidates": [
@@ -1582,20 +1489,19 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchasePolicyVersion": 1,
       "purchaseProductId": "H082119CK18",
       "purchaseUrl": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK18/",
-      "purchaseObservedAt": "2026-10-30T04:12:47.658Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:47.820Z",
+      "purchaseObservedAt": "2026-10-30T04:17:44.295Z",
+      "purchaseCheckedAt": "2026-10-30T04:17:44.424Z",
       "purchaseHttpStatus": 200,
       "purchaseHeaders": {
-        "age": "1045",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:46 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:43 GMT"
       },
       "purchaseEvidence": {
         "skuConfirmed": true,
@@ -1603,7 +1509,7 @@
         "unavailable": false,
         "blocked": false
       },
-      "purchaseProofId": "github-browser:41001582068:H082119CK18:2026-10-30T04:12:47.820Z",
+      "purchaseProofId": "github-browser:41002052004:H082119CK18:2026-10-30T04:17:44.424Z",
       "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
@@ -1629,6 +1535,10 @@
           {
             "path": "/customer-session",
             "status": 403
+          },
+          {
+            "path": "/sync-form",
+            "status": 403
           }
         ]
       }
@@ -1646,20 +1556,19 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchasePolicyVersion": 1,
       "purchaseProductId": "H086959CK34",
       "purchaseUrl": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086959CK34/",
-      "purchaseObservedAt": "2026-10-30T04:12:48.031Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:48.192Z",
+      "purchaseObservedAt": "2026-10-30T04:17:44.880Z",
+      "purchaseCheckedAt": "2026-10-30T04:17:45.006Z",
       "purchaseHttpStatus": 200,
       "purchaseHeaders": {
-        "age": "1046",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:47 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:44 GMT"
       },
       "purchaseEvidence": {
         "skuConfirmed": true,
@@ -1667,7 +1576,7 @@
         "unavailable": false,
         "blocked": false
       },
-      "purchaseProofId": "github-browser:41001582068:H086959CK34:2026-10-30T04:12:48.192Z",
+      "purchaseProofId": "github-browser:41002052004:H086959CK34:2026-10-30T04:17:45.006Z",
       "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
@@ -1689,7 +1598,16 @@
           }
         ],
         "consentOptions": [],
-        "frontendResponses": []
+        "frontendResponses": [
+          {
+            "path": "/sync-form",
+            "status": 403
+          },
+          {
+            "path": "/customer-session",
+            "status": 403
+          }
+        ]
       }
     },
     {
@@ -1705,20 +1623,20 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchasePolicyVersion": 1,
       "purchaseProductId": "H086915CK37",
       "purchaseUrl": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CK37/",
-      "purchaseObservedAt": "2026-10-30T04:12:46.252Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:46.406Z",
+      "purchaseObservedAt": "2026-10-30T04:17:43.246Z",
+      "purchaseCheckedAt": "2026-10-30T04:17:43.359Z",
       "purchaseHttpStatus": 200,
       "purchaseHeaders": {
-        "age": "2922",
+        "age": "3219",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:46 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:43 GMT"
       },
       "purchaseEvidence": {
         "skuConfirmed": true,
@@ -1726,7 +1644,7 @@
         "unavailable": false,
         "blocked": false
       },
-      "purchaseProofId": "github-browser:41001582068:H086915CK37:2026-10-30T04:12:46.406Z",
+      "purchaseProofId": "github-browser:41002052004:H086915CK37:2026-10-30T04:17:43.359Z",
       "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
@@ -1748,12 +1666,7 @@
           }
         ],
         "consentOptions": [],
-        "frontendResponses": [
-          {
-            "path": "/customer-session",
-            "status": 403
-          }
-        ]
+        "frontendResponses": []
       }
     },
     {
@@ -1769,20 +1682,19 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchasePolicyVersion": 1,
       "purchaseProductId": "H086248CK37",
       "purchaseUrl": "https://www.hermes.com/tw/zh/product/hermes-messenger-57%E8%82%A9%E8%83%8C%E5%8C%85-H086248CK37/",
-      "purchaseObservedAt": "2026-10-30T04:12:48.402Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:48.571Z",
+      "purchaseObservedAt": "2026-10-30T04:17:45.477Z",
+      "purchaseCheckedAt": "2026-10-30T04:17:45.606Z",
       "purchaseHttpStatus": 200,
       "purchaseHeaders": {
-        "age": "1046",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:48 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:45 GMT"
       },
       "purchaseEvidence": {
         "skuConfirmed": true,
@@ -1790,7 +1702,7 @@
         "unavailable": false,
         "blocked": false
       },
-      "purchaseProofId": "github-browser:41001582068:H086248CK37:2026-10-30T04:12:48.571Z",
+      "purchaseProofId": "github-browser:41002052004:H086248CK37:2026-10-30T04:17:45.606Z",
       "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
@@ -1812,7 +1724,16 @@
           }
         ],
         "consentOptions": [],
-        "frontendResponses": []
+        "frontendResponses": [
+          {
+            "path": "/sync-form",
+            "status": 403
+          },
+          {
+            "path": "/customer-session",
+            "status": 403
+          }
+        ]
       }
     },
     {
@@ -1828,20 +1749,20 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchasePolicyVersion": 1,
       "purchaseProductId": "H082119CK37",
       "purchaseUrl": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK37/",
-      "purchaseObservedAt": "2026-10-30T04:12:48.782Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:48.950Z",
+      "purchaseObservedAt": "2026-10-30T04:17:45.780Z",
+      "purchaseCheckedAt": "2026-10-30T04:17:45.894Z",
       "purchaseHttpStatus": 200,
       "purchaseHeaders": {
-        "age": "1827",
+        "age": "2124",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:48 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:45 GMT"
       },
       "purchaseEvidence": {
         "skuConfirmed": true,
@@ -1849,7 +1770,7 @@
         "unavailable": false,
         "blocked": false
       },
-      "purchaseProofId": "github-browser:41001582068:H082119CK37:2026-10-30T04:12:48.950Z",
+      "purchaseProofId": "github-browser:41002052004:H082119CK37:2026-10-30T04:17:45.894Z",
       "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
@@ -1887,20 +1808,19 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchasePolicyVersion": 1,
       "purchaseProductId": "H088228CK2D",
       "purchaseUrl": "https://www.hermes.com/tw/zh/product/tour-de-piste%E8%82%A9%E8%83%8C%E5%8C%85-H088228CK2D/",
-      "purchaseObservedAt": "2026-10-30T04:12:49.156Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:49.325Z",
+      "purchaseObservedAt": "2026-10-30T04:17:46.381Z",
+      "purchaseCheckedAt": "2026-10-30T04:17:46.491Z",
       "purchaseHttpStatus": 200,
       "purchaseHeaders": {
-        "age": "1047",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:48 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:46 GMT"
       },
       "purchaseEvidence": {
         "skuConfirmed": true,
@@ -1908,7 +1828,7 @@
         "unavailable": false,
         "blocked": false
       },
-      "purchaseProofId": "github-browser:41001582068:H088228CK2D:2026-10-30T04:12:49.325Z",
+      "purchaseProofId": "github-browser:41002052004:H088228CK2D:2026-10-30T04:17:46.491Z",
       "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
@@ -1930,7 +1850,16 @@
           }
         ],
         "consentOptions": [],
-        "frontendResponses": []
+        "frontendResponses": [
+          {
+            "path": "/customer-session",
+            "status": 403
+          },
+          {
+            "path": "/sync-form",
+            "status": 403
+          }
+        ]
       }
     },
     {
@@ -1946,20 +1875,19 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchasePolicyVersion": 1,
       "purchaseProductId": "H086958CK2D",
       "purchaseUrl": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086958CK2D/",
-      "purchaseObservedAt": "2026-10-30T04:12:49.561Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:49.726Z",
+      "purchaseObservedAt": "2026-10-30T04:17:47.066Z",
+      "purchaseCheckedAt": "2026-10-30T04:17:47.150Z",
       "purchaseHttpStatus": 200,
       "purchaseHeaders": {
-        "age": "1047",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:49 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:46 GMT"
       },
       "purchaseEvidence": {
         "skuConfirmed": true,
@@ -1967,7 +1895,7 @@
         "unavailable": false,
         "blocked": false
       },
-      "purchaseProofId": "github-browser:41001582068:H086958CK2D:2026-10-30T04:12:49.726Z",
+      "purchaseProofId": "github-browser:41002052004:H086958CK2D:2026-10-30T04:17:47.150Z",
       "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
@@ -1989,7 +1917,16 @@
           }
         ],
         "consentOptions": [],
-        "frontendResponses": []
+        "frontendResponses": [
+          {
+            "path": "/sync-form",
+            "status": 403
+          },
+          {
+            "path": "/customer-session",
+            "status": 403
+          }
+        ]
       }
     },
     {
@@ -2005,50 +1942,44 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchasePolicyVersion": 1,
       "purchaseProductId": "H082119CK2D",
       "purchaseUrl": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK2D/",
-      "purchaseObservedAt": "2026-10-30T04:12:49.946Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:50.111Z",
-      "purchaseHttpStatus": 200,
+      "purchaseObservedAt": "2026-10-30T04:17:47.583Z",
+      "purchaseCheckedAt": "2026-10-30T04:17:47.584Z",
+      "purchaseHttpStatus": 403,
       "purchaseHeaders": {
-        "age": "3377",
-        "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
-        "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:49 GMT"
+        "cache-control": "max-age=0, private, no-cache, no-store, must-revalidate",
+        "cf-cache-status": "BYPASS",
+        "date": "Fri, 30 Oct 2026 04:17:47 GMT"
       },
       "purchaseEvidence": {
-        "skuConfirmed": true,
+        "skuConfirmed": false,
         "enabled": false,
         "unavailable": false,
-        "blocked": false
+        "blocked": true
       },
-      "purchaseProofId": "github-browser:41001582068:H082119CK2D:2026-10-30T04:12:50.111Z",
-      "purchaseVerification": "cached-or-unknown",
+      "purchaseProofId": "github-browser:41002052004:H082119CK2D:2026-10-30T04:17:47.584Z",
+      "purchaseVerification": "error",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
       "purchaseDiagnostics": {
-        "title": "Steve light junior郵差包 | Hermès 愛馬仕台灣地區官網",
-        "buttons": [
-          {
-            "text": "加入購物車",
-            "visible": false,
-            "disabled": false,
-            "ariaDisabled": null,
-            "rect": {
-              "x": 16,
-              "y": 521,
-              "width": 753,
-              "height": 48
-            },
-            "coveredBy": null
-          }
-        ],
+        "title": "hermes.com",
+        "buttons": [],
         "consentOptions": [],
-        "frontendResponses": []
+        "frontendResponses": [
+          {
+            "path": "/customer-session",
+            "status": 403
+          },
+          {
+            "path": "/sync-form",
+            "status": 403
+          }
+        ]
       }
     },
     {
@@ -2064,20 +1995,20 @@
       "stockSignal": true,
       "displayOnly": true,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchasePolicyVersion": 1,
       "purchaseProductId": "H086915CKP0",
       "purchaseUrl": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CKP0/",
-      "purchaseObservedAt": "2026-10-30T04:12:46.654Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:46.848Z",
+      "purchaseObservedAt": "2026-10-30T04:17:43.559Z",
+      "purchaseCheckedAt": "2026-10-30T04:17:43.677Z",
       "purchaseHttpStatus": 200,
       "purchaseHeaders": {
-        "age": "2350",
+        "age": "2647",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:46 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:43 GMT"
       },
       "purchaseEvidence": {
         "skuConfirmed": true,
@@ -2085,7 +2016,7 @@
         "unavailable": false,
         "blocked": false
       },
-      "purchaseProofId": "github-browser:41001582068:H086915CKP0:2026-10-30T04:12:46.848Z",
+      "purchaseProofId": "github-browser:41002052004:H086915CKP0:2026-10-30T04:17:43.677Z",
       "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
@@ -2123,51 +2054,12 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
-      "purchasePolicyVersion": 1,
-      "purchaseProductId": "H083939CP59",
-      "purchaseUrl": "https://www.hermes.com/tw/zh/product/fonsbelle-chaine%E8%82%A9%E8%83%8C%E5%8C%85-H083939CP59/",
-      "purchaseObservedAt": "2026-10-30T04:12:50.350Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:50.522Z",
-      "purchaseHttpStatus": 200,
-      "purchaseHeaders": {
-        "age": "2354",
-        "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
-        "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:50 GMT"
-      },
-      "purchaseEvidence": {
-        "skuConfirmed": true,
-        "enabled": false,
-        "unavailable": false,
-        "blocked": false
-      },
-      "purchaseProofId": "github-browser:41001582068:H083939CP59:2026-10-30T04:12:50.522Z",
-      "purchaseVerification": "cached-or-unknown",
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchaseVerified": false,
-      "purchaseRequestMode": "browser-default",
-      "purchaseDiagnostics": {
-        "title": "Fonsbelle Chaine肩背包 - 紫色 | Hermès 愛馬仕台灣地區官網",
-        "buttons": [
-          {
-            "text": "加入購物車",
-            "visible": false,
-            "disabled": false,
-            "ariaDisabled": null,
-            "rect": {
-              "x": 16,
-              "y": 521,
-              "width": 753,
-              "height": 48
-            },
-            "coveredBy": null
-          }
-        ],
-        "consentOptions": [],
-        "frontendResponses": []
-      }
+      "purchaseVerification": "not-checked",
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H086915CK89",
@@ -2182,20 +2074,20 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchasePolicyVersion": 1,
       "purchaseProductId": "H086915CK89",
       "purchaseUrl": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CK89/",
-      "purchaseObservedAt": "2026-10-30T04:12:45.810Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:45.999Z",
+      "purchaseObservedAt": "2026-10-30T04:17:42.965Z",
+      "purchaseCheckedAt": "2026-10-30T04:17:43.086Z",
       "purchaseHttpStatus": 200,
       "purchaseHeaders": {
-        "age": "2349",
+        "age": "2647",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:45 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:42 GMT"
       },
       "purchaseEvidence": {
         "skuConfirmed": true,
@@ -2203,7 +2095,7 @@
         "unavailable": false,
         "blocked": false
       },
-      "purchaseProofId": "github-browser:41001582068:H086915CK89:2026-10-30T04:12:45.999Z",
+      "purchaseProofId": "github-browser:41002052004:H086915CK89:2026-10-30T04:17:43.086Z",
       "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
@@ -2241,51 +2133,12 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
-      "purchasePolicyVersion": 1,
-      "purchaseProductId": "H084948CP89",
-      "purchaseUrl": "https://www.hermes.com/tw/zh/product/en-piste%E6%89%8B%E6%8B%BF%E5%8C%85-H084948CP89/",
-      "purchaseObservedAt": "2026-10-30T04:12:51.246Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:51.426Z",
-      "purchaseHttpStatus": 200,
-      "purchaseHeaders": {
-        "age": "2927",
-        "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
-        "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:51 GMT"
-      },
-      "purchaseEvidence": {
-        "skuConfirmed": true,
-        "enabled": false,
-        "unavailable": false,
-        "blocked": false
-      },
-      "purchaseProofId": "github-browser:41001582068:H084948CP89:2026-10-30T04:12:51.426Z",
-      "purchaseVerification": "cached-or-unknown",
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchaseVerified": false,
-      "purchaseRequestMode": "browser-default",
-      "purchaseDiagnostics": {
-        "title": "En Piste手拿包 - 黑色 | Hermès 愛馬仕台灣地區官網",
-        "buttons": [
-          {
-            "text": "加入購物車",
-            "visible": false,
-            "disabled": false,
-            "ariaDisabled": null,
-            "rect": {
-              "x": 16,
-              "y": 521,
-              "width": 753,
-              "height": 48
-            },
-            "coveredBy": null
-          }
-        ],
-        "consentOptions": [],
-        "frontendResponses": []
-      }
+      "purchaseVerification": "not-checked",
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H086955CC89",
@@ -2300,51 +2153,12 @@
       "stockSignal": true,
       "displayOnly": false,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
-      "purchasePolicyVersion": 1,
-      "purchaseProductId": "H086955CC89",
-      "purchaseUrl": "https://www.hermes.com/tw/zh/product/sanglons%E6%89%8B%E6%8B%BF%E5%8C%85-H086955CC89/",
-      "purchaseObservedAt": "2026-10-30T04:12:50.853Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:51.016Z",
-      "purchaseHttpStatus": 200,
-      "purchaseHeaders": {
-        "age": "1048",
-        "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
-        "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:50 GMT"
-      },
-      "purchaseEvidence": {
-        "skuConfirmed": true,
-        "enabled": false,
-        "unavailable": false,
-        "blocked": false
-      },
-      "purchaseProofId": "github-browser:41001582068:H086955CC89:2026-10-30T04:12:51.016Z",
-      "purchaseVerification": "cached-or-unknown",
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchaseVerified": false,
-      "purchaseRequestMode": "browser-default",
-      "purchaseDiagnostics": {
-        "title": "Sanglons手拿包 - 黑色 | Hermès 愛馬仕台灣地區官網",
-        "buttons": [
-          {
-            "text": "加入購物車",
-            "visible": false,
-            "disabled": false,
-            "ariaDisabled": null,
-            "rect": {
-              "x": 16,
-              "y": 521,
-              "width": 753,
-              "height": 48
-            },
-            "coveredBy": null
-          }
-        ],
-        "consentOptions": [],
-        "frontendResponses": []
-      }
+      "purchaseVerification": "not-checked",
+      "purchaseCheckSkipReason": "http-403"
     },
     {
       "id": "H087960CT89",
@@ -2359,20 +2173,20 @@
       "stockSignal": true,
       "displayOnly": true,
       "sourceUrl": "https://www.hermes.com/tw/zh/category/leather-goods/bags-and-clutches/",
-      "sourceDataAt": "2026-10-30T03:59:32.667Z",
-      "sourceCacheAgeSeconds": 787,
-      "sourceFresh": true,
+      "sourceDataAt": "2026-10-30T03:59:32.002Z",
+      "sourceCacheAgeSeconds": 1086,
+      "sourceFresh": false,
       "purchasePolicyVersion": 1,
       "purchaseProductId": "H087960CT89",
       "purchaseUrl": "https://www.hermes.com/tw/zh/product/mallette%E6%89%8B%E6%8F%90%E5%8C%85-H087960CT89/",
-      "purchaseObservedAt": "2026-10-30T04:12:45.262Z",
-      "purchaseCheckedAt": "2026-10-30T04:12:45.577Z",
+      "purchaseObservedAt": "2026-10-30T04:17:42.599Z",
+      "purchaseCheckedAt": "2026-10-30T04:17:42.795Z",
       "purchaseHttpStatus": 200,
       "purchaseHeaders": {
-        "age": "1043",
+        "age": "1340",
         "cache-control": "public, max-age=3600, stale-while-revalidate=60, stale-if-error=86400",
         "cf-cache-status": "HIT",
-        "date": "Fri, 30 Oct 2026 04:12:44 GMT"
+        "date": "Fri, 30 Oct 2026 04:17:42 GMT"
       },
       "purchaseEvidence": {
         "skuConfirmed": true,
@@ -2380,7 +2194,7 @@
         "unavailable": false,
         "blocked": false
       },
-      "purchaseProofId": "github-browser:41001582068:H087960CT89:2026-10-30T04:12:45.577Z",
+      "purchaseProofId": "github-browser:41002052004:H087960CT89:2026-10-30T04:17:42.795Z",
       "purchaseVerification": "cached-or-unknown",
       "purchaseVerified": false,
       "purchaseRequestMode": "browser-default",
@@ -2412,98 +2226,77 @@
       "url": "https://www.hermes.com/tw/zh/product/mallette%E6%89%8B%E6%8F%90%E5%8C%85-H087960CT89/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:45.577Z"
+      "checkedAt": "2026-10-30T04:17:42.795Z"
     },
     {
       "id": "H086915CK89",
       "url": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CK89/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:45.999Z"
+      "checkedAt": "2026-10-30T04:17:43.086Z"
     },
     {
       "id": "H086915CK37",
       "url": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CK37/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:46.406Z"
+      "checkedAt": "2026-10-30T04:17:43.359Z"
     },
     {
       "id": "H086915CKP0",
       "url": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CKP0/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:46.848Z"
+      "checkedAt": "2026-10-30T04:17:43.677Z"
     },
     {
       "id": "H082119CK18",
       "url": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK18/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:47.820Z"
+      "checkedAt": "2026-10-30T04:17:44.424Z"
     },
     {
       "id": "H086959CK34",
       "url": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086959CK34/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:48.192Z"
+      "checkedAt": "2026-10-30T04:17:45.006Z"
     },
     {
       "id": "H086248CK37",
       "url": "https://www.hermes.com/tw/zh/product/hermes-messenger-57%E8%82%A9%E8%83%8C%E5%8C%85-H086248CK37/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:48.571Z"
+      "checkedAt": "2026-10-30T04:17:45.606Z"
     },
     {
       "id": "H082119CK37",
       "url": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK37/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:48.950Z"
+      "checkedAt": "2026-10-30T04:17:45.894Z"
     },
     {
       "id": "H088228CK2D",
       "url": "https://www.hermes.com/tw/zh/product/tour-de-piste%E8%82%A9%E8%83%8C%E5%8C%85-H088228CK2D/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:49.325Z"
+      "checkedAt": "2026-10-30T04:17:46.491Z"
     },
     {
       "id": "H086958CK2D",
       "url": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086958CK2D/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:49.726Z"
+      "checkedAt": "2026-10-30T04:17:47.150Z"
     },
     {
       "id": "H082119CK2D",
       "url": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK2D/",
-      "status": "cached-or-unknown",
-      "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:50.111Z"
-    },
-    {
-      "id": "H083939CP59",
-      "url": "https://www.hermes.com/tw/zh/product/fonsbelle-chaine%E8%82%A9%E8%83%8C%E5%8C%85-H083939CP59/",
-      "status": "cached-or-unknown",
-      "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:50.522Z"
-    },
-    {
-      "id": "H086955CC89",
-      "url": "https://www.hermes.com/tw/zh/product/sanglons%E6%89%8B%E6%8B%BF%E5%8C%85-H086955CC89/",
-      "status": "cached-or-unknown",
-      "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:51.016Z"
-    },
-    {
-      "id": "H084948CP89",
-      "url": "https://www.hermes.com/tw/zh/product/en-piste%E6%89%8B%E6%8B%BF%E5%8C%85-H084948CP89/",
-      "status": "cached-or-unknown",
-      "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:51.426Z"
+      "status": "error",
+      "httpStatus": 403,
+      "checkedAt": "2026-10-30T04:17:47.584Z"
     }
   ],
   "purchaseObservations": {
@@ -2512,63 +2305,63 @@
       "url": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK18/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:47.820Z"
+      "checkedAt": "2026-10-30T04:17:44.424Z"
     },
     "H086959CK34": {
       "id": "H086959CK34",
       "url": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086959CK34/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:48.192Z"
+      "checkedAt": "2026-10-30T04:17:45.006Z"
     },
     "H086915CK37": {
       "id": "H086915CK37",
       "url": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CK37/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:46.406Z"
+      "checkedAt": "2026-10-30T04:17:43.359Z"
     },
     "H086248CK37": {
       "id": "H086248CK37",
       "url": "https://www.hermes.com/tw/zh/product/hermes-messenger-57%E8%82%A9%E8%83%8C%E5%8C%85-H086248CK37/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:48.571Z"
+      "checkedAt": "2026-10-30T04:17:45.606Z"
     },
     "H082119CK37": {
       "id": "H082119CK37",
       "url": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK37/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:48.950Z"
+      "checkedAt": "2026-10-30T04:17:45.894Z"
     },
     "H088228CK2D": {
       "id": "H088228CK2D",
       "url": "https://www.hermes.com/tw/zh/product/tour-de-piste%E8%82%A9%E8%83%8C%E5%8C%85-H088228CK2D/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:49.325Z"
+      "checkedAt": "2026-10-30T04:17:46.491Z"
     },
     "H086958CK2D": {
       "id": "H086958CK2D",
       "url": "https://www.hermes.com/tw/zh/product/bolide%E9%83%B5%E5%B7%AE%E5%8C%85-H086958CK2D/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:49.726Z"
+      "checkedAt": "2026-10-30T04:17:47.150Z"
     },
     "H082119CK2D": {
       "id": "H082119CK2D",
       "url": "https://www.hermes.com/tw/zh/product/steve-light-junior%E9%83%B5%E5%B7%AE%E5%8C%85-H082119CK2D/",
-      "status": "cached-or-unknown",
-      "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:50.111Z"
+      "status": "error",
+      "httpStatus": 403,
+      "checkedAt": "2026-10-30T04:17:47.584Z"
     },
     "H086915CKP0": {
       "id": "H086915CKP0",
       "url": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CKP0/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:46.848Z"
+      "checkedAt": "2026-10-30T04:17:43.677Z"
     },
     "H083939CP59": {
       "id": "H083939CP59",
@@ -2582,7 +2375,7 @@
       "url": "https://www.hermes.com/tw/zh/product/poche-cliquetis%E8%82%A9%E8%83%8C%E5%8C%85-H086915CK89/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:45.999Z"
+      "checkedAt": "2026-10-30T04:17:43.086Z"
     },
     "H084948CP89": {
       "id": "H084948CP89",
@@ -2603,7 +2396,7 @@
       "url": "https://www.hermes.com/tw/zh/product/mallette%E6%89%8B%E6%8F%90%E5%8C%85-H087960CT89/",
       "status": "cached-or-unknown",
       "httpStatus": 200,
-      "checkedAt": "2026-10-30T04:12:45.577Z"
+      "checkedAt": "2026-10-30T04:17:42.795Z"
     }
   },
   "notificationSent": false
